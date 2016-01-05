@@ -2,6 +2,8 @@ package cli
 
 import (
 	"fmt"
+	log "github.com/Sirupsen/logrus"
+	"github.com/yansmallb/tycoon-go/etcdclient"
 	"os"
 )
 
@@ -12,19 +14,23 @@ func Run() {
 	}
 	var err error
 	command := os.Args[1]
+	log.Debugf("cli.Run(): cli args:%+v\n", os.Args)
 	if command == "create" {
 		if len(os.Args) != 4 {
-			fmt.Println("the `create` command takes two arguments. See help")
+			createErr := "the `create` command takes two arguments. See help"
+			fmt.Println(createErr)
+			log.Errorln(createErr)
 			return
 		}
-
 		filePath := os.Args[2]
 		etcdPath := os.Args[3]
 		err = create(filePath, etcdPath)
 	}
 	if command == "delete" {
 		if len(os.Args) != 4 {
-			fmt.Println("the `delete` command takes two arguments. See help")
+			deleteErr := "the `delete` command takes two arguments. See help"
+			fmt.Println(deleteErr)
+			log.Errorln(deleteErr)
 			return
 		}
 		serviceName := os.Args[2]
@@ -33,18 +39,22 @@ func Run() {
 	}
 	if command == "manage" {
 		if len(os.Args) != 3 {
-			fmt.Println("the `manage` command takes one arguments. See help")
+			manageErr := "the `manage` command takes one arguments. See help"
+			fmt.Println(manageErr)
+			log.Errorln(manageErr)
 			return
 		}
 		etcdPath := os.Args[2]
+		etcdclient.EtcdPath = etcdPath
 		err = manage(etcdPath)
 	}
 	if command == "help" {
 		help()
 	}
 	if err != nil {
-		fmt.Print("Error:")
+		fmt.Print("[Error]:")
 		fmt.Println(err)
+		log.Fatalf("cli.Run():%+v\n", err)
 		return
 	}
 }

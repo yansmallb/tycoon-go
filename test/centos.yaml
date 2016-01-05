@@ -1,0 +1,15 @@
+kind: service
+metadata:
+  name: centos-test-tycoon
+  labels:
+    app: centos
+    role: master
+spec:
+  ports:
+  replicas: 1
+  image: centos
+  cmd:
+   - /bin/bash
+  ips:
+  selector:
+   - "constraint:hostname==node8"

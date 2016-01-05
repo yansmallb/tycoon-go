@@ -12,9 +12,9 @@ func help() {
   Email:yanxiaoben@iie.ac.cn
 
   Commands:
-      create
-      delete
-      manage
+      create    [localyaml path] [etcd path]
+      delete    [service name]  [etcd path]
+      manage  [etcdpath]
       help
   `
 	fmt.Println(helpString)

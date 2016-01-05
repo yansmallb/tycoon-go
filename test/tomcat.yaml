@@ -1,0 +1,18 @@
+kind: service
+metadata:
+  name: tomcat-tycoon21
+  labels:
+    app: tomcat
+    role: master
+spec:
+  ports:
+    - 8080
+  replicas: 2
+  image: 192.168.11.57:5000/zhuqifei/tomcat
+  cmd:
+  ips:
+    - 192.168.11.57
+    - 192.168.11.58
+    - 192.168.11.59
+  selector:
+   - "constraint:hostname!=node6"

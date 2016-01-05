@@ -1,7 +1,7 @@
 package api
 
 import (
-	"fmt"
+	log "github.com/Sirupsen/logrus"
 	"net"
 	"net/http"
 	"strings"
@@ -29,7 +29,8 @@ func newListener(proto, addr string) (net.Listener, error) {
 	l, err := net.Listen(proto, addr)
 	if err != nil {
 		if strings.Contains(err.Error(), "address already in use") && strings.Contains(addr, TycoonPort) {
-			return nil, fmt.Errorf("%s: is Docker already running on this machine? Try using a different port", err)
+			log.Fatalf("api.newListener():%s: is Tycoon Manage already running on this machine? Try using a different port", err)
+			return nil, err
 		}
 		return nil, err
 	}
@@ -53,17 +54,21 @@ func (s *Server) SetHandler(handler http.Handler) {
 }
 
 func (s *Server) ListenAndServe() error {
+	log.Infoln("api.ListenAndServe():Start API Listener")
 	chErrors := make(chan error, len(s.hosts))
 
 	for _, host := range s.hosts {
 		protoAddrParts := strings.SplitN(host, "://", 2)
 		if len(protoAddrParts) == 1 {
 			protoAddrParts = append([]string{"tcp"}, protoAddrParts...)
+		} else {
+			if protoAddrParts[0] == "http" {
+				protoAddrParts[0] = "tcp"
+			}
 		}
+		log.Debugf("api.ListenAndServe():%v\n", protoAddrParts)
 
 		go func() {
-			// log.WithFields(log.Fields{"proto": protoAddrParts[0], "addr": protoAddrParts[1]}).Info("Listening for HTTP")
-
 			var (
 				l      net.Listener
 				err    error
@@ -79,7 +84,7 @@ func (s *Server) ListenAndServe() error {
 			case "tcp":
 				l, err = newListener("tcp", protoAddrParts[1])
 			default:
-				err = fmt.Errorf("unsupported protocol: %q", protoAddrParts[0])
+				log.Fatalf("api.ListenAndServe():unsupported protocol: %q", protoAddrParts[0])
 			}
 			if err != nil {
 				chErrors <- err
@@ -93,6 +98,7 @@ func (s *Server) ListenAndServe() error {
 	for i := 0; i < len(s.hosts); i++ {
 		err := <-chErrors
 		if err != nil {
+			log.Fatalf("api.ListenAndServe():%s", err)
 			return err
 		}
 	}

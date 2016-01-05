@@ -186,6 +186,7 @@ func (client *DockerClient) InspectContainer(id string) (*ContainerInfo, error) 
 
 func (client *DockerClient) CreateContainer(config *ContainerConfig, name string) (string, error) {
 	data, err := json.Marshal(config)
+	//fmt.Println(string(data)) //
 	if err != nil {
 		return "", err
 	}
