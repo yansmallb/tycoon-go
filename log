@@ -261,3 +261,9 @@
 [37mDEBU[0m[1230] etcdclient.GetServices():GetServices On etcd Respone &{Action:get Node:{Key: /yansmallb/tycoon/services, CreatedIndex: 50919, ModifiedIndex: 50919, TTL: 0} PrevNode:<nil> Index:65197} 
 [34mINFO[0m[1230] cli.servicesWatcher(): Services: []
          
+[37mDEBU[0m[1260] etcdclient.GetServices():GetServices On etcd Respone &{Action:get Node:{Key: /yansmallb/tycoon/services, CreatedIndex: 50919, ModifiedIndex: 50919, TTL: 0} PrevNode:<nil> Index:65202} 
+[34mINFO[0m[1260] cli.servicesWatcher(): Services: []
+         
+[37mDEBU[0m[1290] etcdclient.GetServices():GetServices On etcd Respone &{Action:get Node:{Key: /yansmallb/tycoon/services, CreatedIndex: 50919, ModifiedIndex: 50919, TTL: 0} PrevNode:<nil> Index:65206} 
+[34mINFO[0m[1290] cli.servicesWatcher(): Services: []
+         
