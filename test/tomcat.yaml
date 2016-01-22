@@ -6,10 +6,14 @@ metadata:
     role: master
 spec:
   ports:
-    - 8080
   replicas: 2
   image: 192.168.11.57:5000/zhuqifei/tomcat
   cmd:
+  resources:
+    cpu-shares:
+    cpuset-cpus:
+    memory:
+    memory-swap:
   ips:
     - 192.168.11.57
     - 192.168.11.58

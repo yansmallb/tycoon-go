@@ -34,13 +34,20 @@ type ServiceMetadata struct {
 }
 
 type ServiceSpec struct {
-	Ports     []int    `ports`
-	Replicas  int      `replicas`
-	Image     string   `image`
-	Resources []string //****
-	Ips       []string `ips`
-	Cmd       []string `cmd`
-	Selector  []string `selector`
+	Ports     []int     `ports`
+	Replicas  int       `replicas`
+	Image     string    `image`
+	Resources Resources `resources` //****
+	Ips       []string  `ips`
+	Cmd       []string  `cmd`
+	Selector  []string  `selector`
+}
+
+type Resources struct {
+	Memory     int64  `memory`
+	MemorySwap int64  `memory-swap`
+	CpuShares  int64  `cpu-shares`
+	CpusetCpus string `cpuset-cpus`
 }
 
 func UnmarshalYaml(in []byte) (*ServiceConfig, error) {
@@ -58,11 +65,11 @@ type ServiceFunc func(*Service) error
 
 func CreateService(config *ServiceConfig) ([]string, error) {
 	swarm, err := swarmclient.NewSwarmClient()
-
 	if err != nil {
 		log.Fatalf("service.CreateService():%s\n", err)
 		return nil, err
 	}
+
 	containerIds := make([]string, 0)
 	containerConfig := new(dockerclient.ContainerConfig)
 	containerConfig.Image = config.Spec.Image
@@ -81,14 +88,21 @@ func CreateService(config *ServiceConfig) ([]string, error) {
 		containerConfig.ExposedPorts = ports
 	}
 
-	// use host, create and start containers
+	// intit hostconfig. use host, create and start containers
 	hostConfig := &dockerclient.HostConfig{NetworkMode: "host"}
-	numOfTimes := 0
+	// use to filter Resources
+	hostConfig.CpuShares = config.Spec.Resources.CpuShares
+	hostConfig.CpusetCpus = config.Spec.Resources.CpusetCpus
+	hostConfig.Memory = config.Spec.Resources.Memory
+	hostConfig.MemorySwap = config.Spec.Resources.MemorySwap
 
+	// replicas
+	numOfTimes := 0
 	if config.Spec.Replicas > 0 {
 		numOfTimes = config.Spec.Replicas
-	} else {
+	} else if config.Spec.Replicas == 0 {
 		numOfTimes = len(config.Spec.Ips)
+		//****
 		if len(config.Spec.Ports) == 0 {
 			err := fmt.Errorf("service.CreateService():%+s Give ips but not give ports\n", config.Metadata.Name)
 			log.Error(err)
@@ -100,12 +114,14 @@ func CreateService(config *ServiceConfig) ([]string, error) {
 		// use to filter specific ips and ports
 		for _, port := range config.Spec.Ports {
 			portbinding := &dockerclient.PortBinding{HostPort: strconv.Itoa(port)}
-			if config.Spec.Replicas <= 0 {
+			if len(config.Spec.Ips) > 0 {
 				portbinding.HostIp = config.Spec.Ips[i]
 			}
 			portBindings[strconv.Itoa(port)] = []dockerclient.PortBinding{*portbinding}
 		}
 		hostConfig.PortBindings = portBindings
+
+		// hostconfig
 		containerConfig.HostConfig = *hostConfig
 
 		// give container different name
@@ -121,12 +137,14 @@ func CreateService(config *ServiceConfig) ([]string, error) {
 		log.Debugf("service.CreateService():containerId:%s\n", containerId)
 		if err != nil {
 			log.Fatalf("service.CreateService():%s\n", err)
-			return nil, err
+			fmt.Printf("[error]service.CreateService():%+v\n", err)
 		}
+
 		//start container
 		swarm.StartContainer(containerId, hostConfig)
 		if err != nil {
 			log.Fatalf("service.CreateService():%s\n", err)
+			fmt.Printf("[error]service.CreateService():%+v\n", err)
 			return nil, err
 		}
 		containerIds = append(containerIds, containerId)
@@ -144,10 +162,12 @@ func DeleteService(s *Service) error {
 		err := swarm.StopContainer(s.ContainersIds[index], 0)
 		if err != nil {
 			log.Errorf("service.DeleteService()::%v\n", err)
+			fmt.Printf("[error]service.CreateService():%+v\n", err)
 		}
 		err = swarm.RemoveContainer(s.ContainersIds[index], true, false)
 		if err != nil {
 			log.Errorf("service.DeleteService()::%v\n", err)
+			fmt.Printf("[error]service.CreateService():%+v\n", err)
 		}
 	}
 	return nil
@@ -224,3 +244,10 @@ func StartService(s *Service) error {
 	}
 	return err
 }
+
+//use for fault-tolerant
+/*
+func HandleServiceFault(containers []dockerclient.ContainerInfo, service *Service) {
+
+}
+*/

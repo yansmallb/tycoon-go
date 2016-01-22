@@ -122,3 +122,25 @@ func (e *Etcd) CreateService(serviceName string, serviceCfgStr string, container
 	}
 	return nil
 }
+
+func (e *Etcd) UpdateServiceContainerIds(serviceName string, containerIds []string) error {
+	servicePath := path.Join(TycoonDir, serviceName)
+	doption := new(client.DeleteOptions)
+	doption.Dir = true
+	doption.Recursive = true
+
+	Response, err := e.client.Delete(context.Background(), servicePath+"/ContainerIds/", doption)
+	log.Debugf("etcdclient.CreateService():CreateService ServiceConfig On etcd Respone %+v", Response)
+	if err != nil {
+		return err
+	}
+
+	for index := range containerIds {
+		Response, err := e.client.Create(context.Background(), servicePath+"/ContainerIds/"+containerIds[index], containerIds[index])
+		log.Debugf("etcdclient.CreateService():CreateService ContainerIds On etcd Respone %+v", Response)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}

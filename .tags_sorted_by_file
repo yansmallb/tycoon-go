@@ -3,6 +3,184 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/doc.go	/^package logrus$/;"	p
+Debug	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Debug(args ...interface{}) {$/;"	f
+Debugf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Debugf(format string, args ...interface{}) {$/;"	f
+Debugln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Debugln(args ...interface{}) {$/;"	f
+Entry	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^type Entry struct {$/;"	t
+Error	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Error(args ...interface{}) {$/;"	f
+ErrorKey	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^var ErrorKey = "error"$/;"	v
+Errorf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Errorf(format string, args ...interface{}) {$/;"	f
+Errorln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Errorln(args ...interface{}) {$/;"	f
+Fatal	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Fatal(args ...interface{}) {$/;"	f
+Fatalf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Fatalf(format string, args ...interface{}) {$/;"	f
+Fatalln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Fatalln(args ...interface{}) {$/;"	f
+Info	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Info(args ...interface{}) {$/;"	f
+Infof	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Infof(format string, args ...interface{}) {$/;"	f
+Infoln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Infoln(args ...interface{}) {$/;"	f
+NewEntry	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func NewEntry(logger *Logger) *Entry {$/;"	f
+Panic	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Panic(args ...interface{}) {$/;"	f
+Panicf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Panicf(format string, args ...interface{}) {$/;"	f
+Panicln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Panicln(args ...interface{}) {$/;"	f
+Print	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Print(args ...interface{}) {$/;"	f
+Printf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Printf(format string, args ...interface{}) {$/;"	f
+Println	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Println(args ...interface{}) {$/;"	f
+Reader	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Reader() (*bytes.Buffer, error) {$/;"	f
+String	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) String() (string, error) {$/;"	f
+Warn	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warn(args ...interface{}) {$/;"	f
+Warnf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warnf(format string, args ...interface{}) {$/;"	f
+Warning	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warning(args ...interface{}) {$/;"	f
+Warningf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warningf(format string, args ...interface{}) {$/;"	f
+Warningln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warningln(args ...interface{}) {$/;"	f
+Warnln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warnln(args ...interface{}) {$/;"	f
+WithError	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) WithError(err error) *Entry {$/;"	f
+WithField	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) WithField(key string, value interface{}) *Entry {$/;"	f
+WithFields	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) WithFields(fields Fields) *Entry {$/;"	f
+log	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry Entry) log(level Level, msg string) {$/;"	f
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^package logrus$/;"	p
+sprintlnn	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) sprintlnn(args ...interface{}) string {$/;"	f
+init	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/basic/basic.go	/^func init() {$/;"	f
+log	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/basic/basic.go	/^var log = logrus.New()$/;"	v
+main	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/basic/basic.go	/^func main() {$/;"	f
+main	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/basic/basic.go	/^package main$/;"	p
+init	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/hook/hook.go	/^func init() {$/;"	f
+log	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/hook/hook.go	/^var log = logrus.New()$/;"	v
+main	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/hook/hook.go	/^func main() {$/;"	f
+main	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/hook/hook.go	/^package main$/;"	p
+AddHook	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func AddHook(hook Hook) {$/;"	f
+Debug	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Debug(args ...interface{}) {$/;"	f
+Debugf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Debugf(format string, args ...interface{}) {$/;"	f
+Debugln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Debugln(args ...interface{}) {$/;"	f
+Error	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Error(args ...interface{}) {$/;"	f
+Errorf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Errorf(format string, args ...interface{}) {$/;"	f
+Errorln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Errorln(args ...interface{}) {$/;"	f
+Fatal	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Fatal(args ...interface{}) {$/;"	f
+Fatalf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Fatalf(format string, args ...interface{}) {$/;"	f
+Fatalln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Fatalln(args ...interface{}) {$/;"	f
+GetLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func GetLevel() Level {$/;"	f
+Info	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Info(args ...interface{}) {$/;"	f
+Infof	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Infof(format string, args ...interface{}) {$/;"	f
+Infoln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Infoln(args ...interface{}) {$/;"	f
+Panic	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Panic(args ...interface{}) {$/;"	f
+Panicf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Panicf(format string, args ...interface{}) {$/;"	f
+Panicln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Panicln(args ...interface{}) {$/;"	f
+Print	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Print(args ...interface{}) {$/;"	f
+Printf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Printf(format string, args ...interface{}) {$/;"	f
+Println	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Println(args ...interface{}) {$/;"	f
+SetFormatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func SetFormatter(formatter Formatter) {$/;"	f
+SetLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func SetLevel(level Level) {$/;"	f
+SetOutput	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func SetOutput(out io.Writer) {$/;"	f
+StandardLogger	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func StandardLogger() *Logger {$/;"	f
+Warn	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warn(args ...interface{}) {$/;"	f
+Warnf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warnf(format string, args ...interface{}) {$/;"	f
+Warning	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warning(args ...interface{}) {$/;"	f
+Warningf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warningf(format string, args ...interface{}) {$/;"	f
+Warningln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warningln(args ...interface{}) {$/;"	f
+Warnln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warnln(args ...interface{}) {$/;"	f
+WithError	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func WithError(err error) *Entry {$/;"	f
+WithField	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func WithField(key string, value interface{}) *Entry {$/;"	f
+WithFields	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func WithFields(fields Fields) *Entry {$/;"	f
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^package logrus$/;"	p
+std	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^var ($/;"	v
+DefaultTimestampFormat	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatter.go	/^const DefaultTimestampFormat = time.RFC3339$/;"	c
+Formatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatter.go	/^type Formatter interface {$/;"	t
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatter.go	/^package logrus$/;"	p
+prefixFieldClashes	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatter.go	/^func prefixFieldClashes(data Fields) {$/;"	f
+Format	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatters/logstash/logstash.go	/^func (f *LogstashFormatter) Format(entry *logrus.Entry) ([]byte, error) {$/;"	f
+LogstashFormatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatters/logstash/logstash.go	/^type LogstashFormatter struct {$/;"	t
+logstash	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatters/logstash/logstash.go	/^package logstash$/;"	p
+Add	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^func (hooks LevelHooks) Add(hook Hook) {$/;"	f
+Fire	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^func (hooks LevelHooks) Fire(level Level, entry *Entry) error {$/;"	f
+Hook	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^type Hook interface {$/;"	t
+LevelHooks	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^type LevelHooks map[Level][]Hook$/;"	t
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^package logrus$/;"	p
+Fire	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^func (hook *SyslogHook) Fire(entry *logrus.Entry) error {$/;"	f
+Levels	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^func (hook *SyslogHook) Levels() []logrus.Level {$/;"	f
+NewSyslogHook	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^func NewSyslogHook(network, raddr string, priority syslog.Priority, tag string) (*SyslogHook, error) {$/;"	f
+SyslogHook	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^type SyslogHook struct {$/;"	t
+logrus_syslog	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^package logrus_syslog$/;"	p
+Format	Godeps/_workspace/src/github.com/Sirupsen/logrus/json_formatter.go	/^func (f *JSONFormatter) Format(entry *Entry) ([]byte, error) {$/;"	f
+JSONFormatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/json_formatter.go	/^type JSONFormatter struct {$/;"	t
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/json_formatter.go	/^package logrus$/;"	p
+Debug	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Debug(args ...interface{}) {$/;"	f
+Debugf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Debugf(format string, args ...interface{}) {$/;"	f
+Debugln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Debugln(args ...interface{}) {$/;"	f
+Error	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Error(args ...interface{}) {$/;"	f
+Errorf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Errorf(format string, args ...interface{}) {$/;"	f
+Errorln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Errorln(args ...interface{}) {$/;"	f
+Fatal	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Fatal(args ...interface{}) {$/;"	f
+Fatalf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Fatalf(format string, args ...interface{}) {$/;"	f
+Fatalln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Fatalln(args ...interface{}) {$/;"	f
+Info	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Info(args ...interface{}) {$/;"	f
+Infof	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Infof(format string, args ...interface{}) {$/;"	f
+Infoln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Infoln(args ...interface{}) {$/;"	f
+Logger	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^type Logger struct {$/;"	t
+New	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func New() *Logger {$/;"	f
+Panic	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Panic(args ...interface{}) {$/;"	f
+Panicf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Panicf(format string, args ...interface{}) {$/;"	f
+Panicln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Panicln(args ...interface{}) {$/;"	f
+Print	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Print(args ...interface{}) {$/;"	f
+Printf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Printf(format string, args ...interface{}) {$/;"	f
+Println	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Println(args ...interface{}) {$/;"	f
+Warn	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warn(args ...interface{}) {$/;"	f
+Warnf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warnf(format string, args ...interface{}) {$/;"	f
+Warning	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warning(args ...interface{}) {$/;"	f
+Warningf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warningf(format string, args ...interface{}) {$/;"	f
+Warningln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warningln(args ...interface{}) {$/;"	f
+Warnln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warnln(args ...interface{}) {$/;"	f
+WithError	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) WithError(err error) *Entry {$/;"	f
+WithField	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) WithField(key string, value interface{}) *Entry {$/;"	f
+WithFields	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) WithFields(fields Fields) *Entry {$/;"	f
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^package logrus$/;"	p
+DebugLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	InfoLevel$/;"	c
+ErrorLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	FatalLevel$/;"	c
+FatalLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	PanicLevel Level = iota$/;"	c
+Fields	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^type Fields map[string]interface{}$/;"	t
+InfoLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	WarnLevel$/;"	c
+Level	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^type Level uint8$/;"	t
+PanicLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^const ($/;"	c
+ParseLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^func ParseLevel(lvl string) (Level, error) {$/;"	f
+StdLogger	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^type StdLogger interface {$/;"	t
+String	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^func (level Level) String() string {$/;"	f
+WarnLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	ErrorLevel$/;"	c
+_	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	_ StdLogger = &Entry{}$/;"	v
+_	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	_ StdLogger = &log.Logger{}$/;"	v
+_	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^var ($/;"	v
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^package logrus$/;"	p
+Termios	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_bsd.go	/^type Termios syscall.Termios$/;"	t
+ioctlReadTermios	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_bsd.go	/^const ioctlReadTermios = syscall.TIOCGETA$/;"	c
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_bsd.go	/^package logrus$/;"	p
+Termios	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_linux.go	/^type Termios syscall.Termios$/;"	t
+ioctlReadTermios	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_linux.go	/^const ioctlReadTermios = syscall.TCGETS$/;"	c
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_linux.go	/^package logrus$/;"	p
+IsTerminal	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_notwindows.go	/^func IsTerminal() bool {$/;"	f
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_notwindows.go	/^package logrus$/;"	p
+IsTerminal	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_solaris.go	/^func IsTerminal() bool {$/;"	f
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_solaris.go	/^package logrus$/;"	p
+IsTerminal	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_windows.go	/^func IsTerminal() bool {$/;"	f
+kernel32	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_windows.go	/^var kernel32 = syscall.NewLazyDLL("kernel32.dll")$/;"	v
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_windows.go	/^package logrus$/;"	p
+procGetConsoleMode	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_windows.go	/^var ($/;"	v
+Format	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func (f *TextFormatter) Format(entry *Entry) ([]byte, error) {$/;"	f
+TextFormatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^type TextFormatter struct {$/;"	t
+appendKeyValue	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func (f *TextFormatter) appendKeyValue(b *bytes.Buffer, key string, value interface{}) {$/;"	f
+baseTimestamp	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^var ($/;"	v
+blue	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	yellow  = 33$/;"	c
+gray	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	blue    = 34$/;"	c
+green	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	red     = 31$/;"	c
+init	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func init() {$/;"	f
+isTerminal	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	baseTimestamp time.Time$/;"	v
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^package logrus$/;"	p
+miniTS	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func miniTS() int {$/;"	f
+needsQuoting	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func needsQuoting(text string) bool {$/;"	f
+nocolor	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^const ($/;"	c
+printColored	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func (f *TextFormatter) printColored(b *bytes.Buffer, entry *Entry, keys []string, timestampFormat string) {$/;"	f
+red	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	nocolor = 0$/;"	c
+yellow	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	green   = 32$/;"	c
+Writer	Godeps/_workspace/src/github.com/Sirupsen/logrus/writer.go	/^func (logger *Logger) Writer() *io.PipeWriter {$/;"	f
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/writer.go	/^package logrus$/;"	p
+writerFinalizer	Godeps/_workspace/src/github.com/Sirupsen/logrus/writer.go	/^func writerFinalizer(writer *io.PipeWriter) {$/;"	f
+writerScanner	Godeps/_workspace/src/github.com/Sirupsen/logrus/writer.go	/^func (logger *Logger) writerScanner(reader *io.PipeReader) {$/;"	f
 AddRole	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^func (r *httpAuthRoleAPI) AddRole(ctx context.Context, rolename string) error {$/;"	f
 AuthRoleAPI	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^type AuthRoleAPI interface {$/;"	t
 GetRole	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^func (r *httpAuthRoleAPI) GetRole(ctx context.Context, rolename string) (*Role, error) {$/;"	f
@@ -289,31 +467,54 @@ URLs	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urlsmap.go	/^func (c
 URLsMap	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urlsmap.go	/^type URLsMap map[string]URLs$/;"	t
 parse	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urlsmap.go	/^func parse(s string) map[string][]string {$/;"	f
 types	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urlsmap.go	/^package types$/;"	p
-HumanDuration	Godeps/_workspace/src/github.com/docker/docker/pkg/units/duration.go	/^func HumanDuration(d time.Duration) string {$/;"	f
-units	Godeps/_workspace/src/github.com/docker/docker/pkg/units/duration.go	/^package units$/;"	p
-BytesSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func BytesSize(size float64) string {$/;"	f
-CustomSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func CustomSize(format string, size float64, base float64, _map []string) string {$/;"	f
-FromHumanSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func FromHumanSize(size string) (int64, error) {$/;"	f
-GB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	MB = 1000 * KB$/;"	c
-GiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	MiB = 1024 * KiB$/;"	c
-HumanSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func HumanSize(size float64) string {$/;"	f
-KB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^const ($/;"	c
-KiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	PB = 1000 * TB$/;"	c
-MB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	KB = 1000$/;"	c
-MiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	KiB = 1024$/;"	c
-PB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	TB = 1000 * GB$/;"	c
-PiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	TiB = 1024 * GiB$/;"	c
-RAMInBytes	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func RAMInBytes(size string) (int64, error) {$/;"	f
-TB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	GB = 1000 * MB$/;"	c
-TiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	GiB = 1024 * MiB$/;"	c
-binaryAbbrs	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^var binaryAbbrs = []string{"B", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"}$/;"	v
-binaryMap	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	decimalMap = unitMap{"k": KB, "m": MB, "g": GB, "t": TB, "p": PB}$/;"	v
-decimalMap	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^var ($/;"	v
-decimapAbbrs	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^var decimapAbbrs = []string{"B", "kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"}$/;"	v
-parseSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func parseSize(sizeStr string, uMap unitMap) (int64, error) {$/;"	f
-sizeRegex	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	binaryMap  = unitMap{"k": KiB, "m": MiB, "g": GiB, "t": TiB, "p": PiB}$/;"	v
-unitMap	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^type unitMap map[string]int64$/;"	t
-units	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^package units$/;"	p
+HumanDuration	Godeps/_workspace/src/github.com/docker/go-units/duration.go	/^func HumanDuration(d time.Duration) string {$/;"	f
+units	Godeps/_workspace/src/github.com/docker/go-units/duration.go	/^package units$/;"	p
+BytesSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func BytesSize(size float64) string {$/;"	f
+CustomSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func CustomSize(format string, size float64, base float64, _map []string) string {$/;"	f
+FromHumanSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func FromHumanSize(size string) (int64, error) {$/;"	f
+GB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	MB = 1000 * KB$/;"	c
+GiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	MiB = 1024 * KiB$/;"	c
+HumanSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func HumanSize(size float64) string {$/;"	f
+KB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^const ($/;"	c
+KiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	PB = 1000 * TB$/;"	c
+MB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	KB = 1000$/;"	c
+MiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	KiB = 1024$/;"	c
+PB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	TB = 1000 * GB$/;"	c
+PiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	TiB = 1024 * GiB$/;"	c
+RAMInBytes	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func RAMInBytes(size string) (int64, error) {$/;"	f
+TB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	GB = 1000 * MB$/;"	c
+TiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	GiB = 1024 * MiB$/;"	c
+binaryAbbrs	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^var binaryAbbrs = []string{"B", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"}$/;"	v
+binaryMap	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	decimalMap = unitMap{"k": KB, "m": MB, "g": GB, "t": TB, "p": PB}$/;"	v
+decimalMap	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^var ($/;"	v
+decimapAbbrs	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^var decimapAbbrs = []string{"B", "kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"}$/;"	v
+parseSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func parseSize(sizeStr string, uMap unitMap) (int64, error) {$/;"	f
+sizeRegex	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	binaryMap  = unitMap{"k": KiB, "m": MiB, "g": GiB, "t": TiB, "p": PiB}$/;"	v
+unitMap	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^type unitMap map[string]int64$/;"	t
+units	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^package units$/;"	p
+GetRlimit	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^func (u *Ulimit) GetRlimit() (*Rlimit, error) {$/;"	f
+ParseUlimit	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^func ParseUlimit(val string) (*Ulimit, error) {$/;"	f
+Rlimit	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^type Rlimit struct {$/;"	t
+String	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^func (u *Ulimit) String() string {$/;"	f
+Ulimit	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^type Ulimit struct {$/;"	t
+rlimitAs	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^const ($/;"	c
+rlimitCPU	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitCore       = 4$/;"	c
+rlimitCore	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitAs         = 9$/;"	c
+rlimitData	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitCPU        = 0$/;"	c
+rlimitFsize	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitData       = 2$/;"	c
+rlimitLocks	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitFsize      = 1$/;"	c
+rlimitMemlock	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitLocks      = 10$/;"	c
+rlimitMsgqueue	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitMemlock    = 8$/;"	c
+rlimitNice	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitMsgqueue   = 12$/;"	c
+rlimitNofile	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitNice       = 13$/;"	c
+rlimitNproc	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitNofile     = 7$/;"	c
+rlimitRss	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitNproc      = 6$/;"	c
+rlimitRtprio	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitRss        = 5$/;"	c
+rlimitRttime	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitRtprio     = 14$/;"	c
+rlimitSigpending	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitRttime     = 15$/;"	c
+rlimitStack	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitSigpending = 11$/;"	c
+ulimitNameMapping	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^var ulimitNameMapping = map[string]int{$/;"	v
+units	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^package units$/;"	p
 Clear	Godeps/_workspace/src/github.com/gorilla/context/context.go	/^func Clear(r *http.Request) {$/;"	f
 ClearHandler	Godeps/_workspace/src/github.com/gorilla/context/context.go	/^func ClearHandler(h http.Handler) http.Handler {$/;"	f
 Delete	Godeps/_workspace/src/github.com/gorilla/context/context.go	/^func Delete(r *http.Request, key interface{}) {$/;"	f
@@ -3563,7 +3764,16 @@ output_raw_buffer_size	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlprivateh.go	/^
 width	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlprivateh.go	/^func width(b byte) int {$/;"	f
 yaml	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlprivateh.go	/^package yaml$/;"	p
 api	api/handlers.go	/^package api$/;"	p
+createService	api/handlers.go	/^func createService(w http.ResponseWriter, r *http.Request) {$/;"	f
+deleteService	api/handlers.go	/^func deleteService(w http.ResponseWriter, r *http.Request) {$/;"	f
+doService	api/handlers.go	/^func doService(w http.ResponseWriter, r *http.Request, commond service.ServiceFunc, comstr string) {$/;"	f
+getService	api/handlers.go	/^func getService(w http.ResponseWriter, r *http.Request) {$/;"	f
 getServices	api/handlers.go	/^func getServices(w http.ResponseWriter, r *http.Request) {$/;"	f
+getServicesInfo	api/handlers.go	/^func getServicesInfo(w http.ResponseWriter, r *http.Request) {$/;"	f
+httpError	api/handlers.go	/^func httpError(w http.ResponseWriter, err string, status int) {$/;"	f
+restartService	api/handlers.go	/^func restartService(w http.ResponseWriter, r *http.Request) {$/;"	f
+startService	api/handlers.go	/^func startService(w http.ResponseWriter, r *http.Request) {$/;"	f
+stopService	api/handlers.go	/^func stopService(w http.ResponseWriter, r *http.Request) {$/;"	f
 NewPrimary	api/primary.go	/^func NewPrimary() *mux.Router {$/;"	f
 api	api/primary.go	/^package api$/;"	p
 handler	api/primary.go	/^type handler func(w http.ResponseWriter, r *http.Request)$/;"	t
@@ -3589,32 +3799,55 @@ cli	cli/delete.go	/^package cli$/;"	p
 delete	cli/delete.go	/^func delete(serviceName string, etcdPath string) error {$/;"	f
 cli	cli/help.go	/^package cli$/;"	p
 help	cli/help.go	/^func help() {$/;"	f
-ServicesInfo	cli/manage.go	/^var ServicesInfo []serviceInfo$/;"	v
+HeartbeatSecond	cli/manage.go	/^var HeartbeatSecond = 30$/;"	v
 cli	cli/manage.go	/^package cli$/;"	p
-etcdWatcher	cli/manage.go	/^func etcdWatcher(servicesInfo []serviceInfo) {$/;"	f
 manage	cli/manage.go	/^func manage(etcdPath string) error {$/;"	f
-serviceInfo	cli/manage.go	/^type serviceInfo struct {$/;"	t
+servicesWatcher	cli/manage.go	/^func servicesWatcher(etcdPath string) error {$/;"	f
 CreateService	etcdclient/etcdclient.go	/^func (e *Etcd) CreateService(serviceName string, serviceCfgStr string, containerIds []string) error {$/;"	f
 DeleteService	etcdclient/etcdclient.go	/^func (e *Etcd) DeleteService(serviceName string) error {$/;"	f
 Etcd	etcdclient/etcdclient.go	/^type Etcd struct {$/;"	t
+EtcdPath	etcdclient/etcdclient.go	/^var EtcdPath = "http:\/\/127.0.0.1:2379"$/;"	v
 GetService	etcdclient/etcdclient.go	/^func (e *Etcd) GetService(serviceName string) (*service.Service, error) {$/;"	f
+GetServices	etcdclient/etcdclient.go	/^func (e *Etcd) GetServices() ([]string, error) {$/;"	f
 NewEtcdClient	etcdclient/etcdclient.go	/^func NewEtcdClient(etcdpath string) (*Etcd, error) {$/;"	f
 ServcieTimeout	etcdclient/etcdclient.go	/^var ServcieTimeout = 10 * 24 * 365 * time.Hour$/;"	v
 TycoonDir	etcdclient/etcdclient.go	/^var TycoonDir = "\/yansmallb\/tycoon\/services\/"$/;"	v
-WatchOnce	etcdclient/etcdclient.go	/^func (e *Etcd) WatchOnce() ([]string, error) {$/;"	f
+UpdateServiceContainerIds	etcdclient/etcdclient.go	/^func (e *Etcd) UpdateServiceContainerIds(serviceName string, containerIds []string) error {$/;"	f
 etcdclient	etcdclient/etcdclient.go	/^package etcdclient$/;"	p
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+Config	main.go	/^type Config struct {$/;"	t
+UnmarshalConfig	main.go	/^func UnmarshalConfig(path string) error {$/;"	f
+checkFileIsExist	main.go	/^func checkFileIsExist(filename string) bool {$/;"	f
 main	main.go	/^func main() {$/;"	f
 main	main.go	/^package main$/;"	p
 CreateService	service/service.go	/^func CreateService(config *ServiceConfig) ([]string, error) {$/;"	f
 DeleteService	service/service.go	/^func DeleteService(s *Service) error {$/;"	f
+GetService	service/service.go	/^func GetService(s *Service) (*ServiceInfo, error) {$/;"	f
+HandleServiceFault	service/service.go	/^func HandleServiceFault(containers []dockerclient.ContainerInfo, service *Service) {$/;"	f
+MarshalYaml	service/service.go	/^func MarshalYaml(sc *ServiceConfig) (string, error) {$/;"	f
+Resources	service/service.go	/^type Resources struct {$/;"	t
+RestartService	service/service.go	/^func RestartService(s *Service) error {$/;"	f
 Service	service/service.go	/^type Service struct {$/;"	t
 ServiceConfig	service/service.go	/^type ServiceConfig struct {$/;"	t
+ServiceFunc	service/service.go	/^type ServiceFunc func(*Service) error$/;"	t
+ServiceInfo	service/service.go	/^type ServiceInfo struct {$/;"	t
 ServiceMetadata	service/service.go	/^type ServiceMetadata struct {$/;"	t
 ServiceSpec	service/service.go	/^type ServiceSpec struct {$/;"	t
+ServicesInfo	service/service.go	/^var ServicesInfo []ServiceInfo$/;"	v
+StartService	service/service.go	/^func StartService(s *Service) error {$/;"	f
+StopService	service/service.go	/^func StopService(s *Service) error {$/;"	f
 UnmarshalYaml	service/service.go	/^func UnmarshalYaml(in []byte) (*ServiceConfig, error) {$/;"	f
 service	service/service.go	/^package service$/;"	p
-NewSwarmClient	swarmclient/swarmclient.go	/^func NewSwarmClient() (*dockerclient.DockerClient, error) {$/;"	f
+ContainersHealthCheck	swarmclient/swarmclient.go	/^func (sc *SwarmClient) ContainersHealthCheck(containers []dockerclient.ContainerInfo) ([]dockerclient.ContainerInfo, int) {$/;"	f
+CreateContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) CreateContainer(config *dockerclient.ContainerConfig, name string) (string, error) {$/;"	f
+GetContainerInfo	swarmclient/swarmclient.go	/^func (sc *SwarmClient) GetContainerInfo(containerId string) (*dockerclient.ContainerInfo, error) {$/;"	f
+GetContainersInfo	swarmclient/swarmclient.go	/^func (sc *SwarmClient) GetContainersInfo(containersIds []string) ([]dockerclient.ContainerInfo, int) {$/;"	f
+NewSwarmClient	swarmclient/swarmclient.go	/^func NewSwarmClient() (*SwarmClient, error) {$/;"	f
+RemoveContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) RemoveContainer(id string, force, volumes bool) error {$/;"	f
+RestartContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) RestartContainer(id string, timeout int) error {$/;"	f
+StartContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) StartContainer(id string, config *dockerclient.HostConfig) error {$/;"	f
+StopContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) StopContainer(id string, timeout int) error {$/;"	f
+SwarmClient	swarmclient/swarmclient.go	/^type SwarmClient struct {$/;"	t
+SwarmHost	swarmclient/swarmclient.go	/^var SwarmHost = "http:\/\/127.0.0.1"$/;"	v
+SwarmPort	swarmclient/swarmclient.go	/^var SwarmPort = ":2375"$/;"	v
 swarmclient	swarmclient/swarmclient.go	/^package swarmclient$/;"	p
-swarmhost	swarmclient/swarmclient.go	/^var swarmhost = "http:\/\/127.0.0.1"$/;"	v
-swarmport	swarmclient/swarmclient.go	/^var swarmport = ":2375"$/;"	v

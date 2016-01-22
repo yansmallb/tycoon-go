@@ -55,19 +55,23 @@ func servicesWatcher(etcdPath string) error {
 				time.Sleep(heartbeat)
 				continue
 			}
-			for index := range servicesName {
+			for _, serviceName := range servicesName {
 				//get service info with serviceName
-				s, err := etcd.GetService(servicesName[index])
+				s, err := etcd.GetService(serviceName)
 				if err != nil {
 					log.Fatalf("cli.servicesWatcher():%+v\n", err)
 				}
 
 				//get containers info with containerIds
 				containers, status := swarm.GetContainersInfo(s.ContainersIds)
+				if status != 1 {
+					// try to restart container , if it can't restart remove it
+					status = swarm.ContainersHealthCheck(containers)
+				}
 				si := &service.ServiceInfo{Service: *s, Containers: containers, Status: status}
 
 				service.ServicesInfo = append(service.ServicesInfo, *si)
-				log.Debugf("cli.servicesWatcher(): %s info: %+v\n", servicesName[index], si)
+				log.Debugf("cli.servicesWatcher(): %s info: %+v\n", serviceName, si)
 			}
 			time.Sleep(heartbeat)
 		}

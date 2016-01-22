@@ -40,7 +40,7 @@ func main() {
 		log.Fatalf("main.main():%+v\n", err)
 		return
 	}
-	log.Infoln("main.main():Start Tycoon")
+	log.Infoln("main.main():Start Tycoon Main")
 	cli.Run()
 }
 
@@ -65,6 +65,7 @@ func UnmarshalConfig(path string) error {
 			return err
 		}
 		log.SetOutput(file)
+		log.Infoln("********************|START TYCOON|********************")
 		log.Infoln("main.UnmarshalConfig():Log Path : " + p)
 	} else {
 		log.Infoln("main.UnmarshalConfig():Log Path : os.stderr")

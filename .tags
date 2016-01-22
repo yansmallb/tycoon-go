@@ -5,10 +5,12 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 APIVersion	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^const ($/;"	c
+Add	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^func (hooks LevelHooks) Add(hook Hook) {$/;"	f
 Add	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^func (m *httpMembersAPI) Add(ctx context.Context, peerURL string) (*Member, error) {$/;"	f
 Add	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (ts *tsafeSet) Add(value string) {$/;"	f
 Add	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (us *unsafeSet) Add(value string) {$/;"	f
 AddExt	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (o *extHandle) AddExt($/;"	f
+AddHook	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func AddHook(hook Hook) {$/;"	f
 AddRole	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^func (r *httpAuthRoleAPI) AddRole(ctx context.Context, rolename string) error {$/;"	f
 AddUser	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go	/^func (u *httpAuthUserAPI) AddUser(ctx context.Context, username string, password string) error {$/;"	f
 AsSymbolAll	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^	AsSymbolDefault AsSymbolFlag = iota$/;"	c
@@ -42,7 +44,7 @@ BuildVarsFunc	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Rou
 BuildVarsFunc	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) BuildVarsFunc(f BuildVarsFunc) *Route {$/;"	f
 BuildVarsFunc	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^type BuildVarsFunc func(map[string]string) map[string]string$/;"	t
 BytesExt	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type BytesExt interface {$/;"	t
-BytesSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func BytesSize(size float64) string {$/;"	f
+BytesSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func BytesSize(size float64) string {$/;"	f
 Callback	Godeps/_workspace/src/github.com/samalba/dockerclient/interface.go	/^type Callback func(*Event, chan error, ...interface{})$/;"	t
 CancelFunc	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^type CancelFunc func()$/;"	t
 CancelableTransport	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type CancelableTransport interface {$/;"	t
@@ -75,6 +77,7 @@ CodecEncodeSelf	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.generat
 CodecEncodeSelf	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.generated.go	/^func (x *Response) CodecEncodeSelf(e *codec1978.Encoder) {$/;"	f
 CodecEncodeSelf	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.generated.go	/^func (x Nodes) CodecEncodeSelf(e *codec1978.Encoder) {$/;"	f
 Config	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type Config struct {$/;"	t
+Config	main.go	/^type Config struct {$/;"	t
 ConfigFile	Godeps/_workspace/src/github.com/samalba/dockerclient/auth.go	/^type ConfigFile struct {$/;"	t
 ConnectNetwork	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) ConnectNetwork(id, container string) error {$/;"	f
 ConnectNetwork	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) ConnectNetwork(id, container string) error {$/;"	f
@@ -95,6 +98,7 @@ ContainerType	Godeps/_workspace/src/github.com/ugorji/go/codec/json.go	/^func (d
 ContainerType	Godeps/_workspace/src/github.com/ugorji/go/codec/msgpack.go	/^func (d *msgpackDecDriver) ContainerType() (vt valueType) {$/;"	f
 ContainerType	Godeps/_workspace/src/github.com/ugorji/go/codec/noop.go	/^func (h *noopDrv) ContainerType() (vt valueType) {$/;"	f
 ContainerType	Godeps/_workspace/src/github.com/ugorji/go/codec/simple.go	/^func (d *simpleDecDriver) ContainerType() (vt valueType) {$/;"	f
+ContainersHealthCheck	swarmclient/swarmclient.go	/^func (sc *SwarmClient) ContainersHealthCheck(containers []dockerclient.ContainerInfo) ([]dockerclient.ContainerInfo, int) {$/;"	f
 Contains	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (ts *tsafeSet) Contains(value string) (exists bool) {$/;"	f
 Contains	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (us *unsafeSet) Contains(value string) (exists bool) {$/;"	f
 ContainsAll	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (us *unsafeSet) ContainsAll(values []string) bool {$/;"	f
@@ -110,6 +114,7 @@ Create	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func (k *ht
 CreateContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) CreateContainer(config *ContainerConfig, name string) (string, error) {$/;"	f
 CreateContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) CreateContainer(config *dockerclient.ContainerConfig, name string) (string, error) {$/;"	f
 CreateContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) CreateContainer(config *dockerclient.ContainerConfig, name string) (string, error) {$/;"	f
+CreateContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) CreateContainer(config *dockerclient.ContainerConfig, name string) (string, error) {$/;"	f
 CreateInOrder	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func (k *httpKeysAPI) CreateInOrder(ctx context.Context, dir, val string, opts *CreateInOrderOptions) (*Response, error) {$/;"	f
 CreateInOrderOptions	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type CreateInOrderOptions struct {$/;"	t
 CreateNetwork	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) CreateNetwork(config *NetworkCreate) (*NetworkCreateResponse, error) {$/;"	f
@@ -121,10 +126,20 @@ CreateVolume	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.
 CreateVolume	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) CreateVolume(request *dockerclient.VolumeCreateRequest) (*dockerclient.Volume, error) {$/;"	f
 CreateVolume	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) CreateVolume(request *dockerclient.VolumeCreateRequest) (*dockerclient.Volume, error) {$/;"	f
 CurrentRoute	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func CurrentRoute(r *http.Request) *Route {$/;"	f
-CustomSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func CustomSize(format string, size float64, base float64, _map []string) string {$/;"	f
+CustomSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func CustomSize(format string, size float64, base float64, _map []string) string {$/;"	f
 Deadline	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func (*emptyCtx) Deadline() (deadline time.Time, ok bool) {$/;"	f
 Deadline	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func (c *timerCtx) Deadline() (deadline time.Time, ok bool) {$/;"	f
 DeadlineExceeded	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^var DeadlineExceeded = errors.New("context deadline exceeded")$/;"	v
+Debug	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Debug(args ...interface{}) {$/;"	f
+Debug	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Debug(args ...interface{}) {$/;"	f
+Debug	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Debug(args ...interface{}) {$/;"	f
+DebugLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	InfoLevel$/;"	c
+Debugf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Debugf(format string, args ...interface{}) {$/;"	f
+Debugf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Debugf(format string, args ...interface{}) {$/;"	f
+Debugf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Debugf(format string, args ...interface{}) {$/;"	f
+Debugln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Debugln(args ...interface{}) {$/;"	f
+Debugln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Debugln(args ...interface{}) {$/;"	f
+Debugln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Debugln(args ...interface{}) {$/;"	f
 DecArrayCannotExpand	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func (f genHelperDecoder) DecArrayCannotExpand(sliceLen, streamLen int) {$/;"	f
 DecBasicHandle	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func (f genHelperDecoder) DecBasicHandle() *BasicHandle {$/;"	f
 DecBinary	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func (f genHelperDecoder) DecBinary() bool {$/;"	f
@@ -737,6 +752,7 @@ DecodeUint	Godeps/_workspace/src/github.com/ugorji/go/codec/simple.go	/^func (d 
 Decoder	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^type Decoder struct {$/;"	t
 DefaultCheckRedirect	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^var DefaultCheckRedirect CheckRedirectFunc = func(via int) error {$/;"	v
 DefaultRequestTimeout	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^var DefaultRequestTimeout = 5 * time.Second$/;"	v
+DefaultTimestampFormat	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatter.go	/^const DefaultTimestampFormat = time.RFC3339$/;"	c
 DefaultTransport	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^var DefaultTransport CancelableTransport = &http.Transport{$/;"	v
 Delete	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func (k *httpKeysAPI) Delete(ctx context.Context, key string, opts *DeleteOptions) (*Response, error) {$/;"	f
 Delete	Godeps/_workspace/src/github.com/gorilla/context/context.go	/^func Delete(r *http.Request, key interface{}) {$/;"	f
@@ -1149,6 +1165,7 @@ Encoder	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^type Encode
 End	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (x decSliceHelper) End() {$/;"	f
 EndpointResource	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type EndpointResource struct {$/;"	t
 Endpoints	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^func (c *httpClusterClient) Endpoints() []string {$/;"	f
+Entry	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^type Entry struct {$/;"	t
 Equals	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (ts *tsafeSet) Equals(other Set) bool {$/;"	f
 Equals	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (us *unsafeSet) Equals(other Set) bool {$/;"	f
 Err	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func (*emptyCtx) Err() error {$/;"	f
@@ -1161,6 +1178,9 @@ ErrNoEndpoints	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^v
 ErrNoEngine	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^var ($/;"	v
 ErrNotFound	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^	ErrImageNotFound = errors.New("Image not found")$/;"	v
 ErrTooManyRedirects	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^	ErrNoEndpoints           = errors.New("client: no endpoints available")$/;"	v
+Error	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Error(args ...interface{}) {$/;"	f
+Error	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Error(args ...interface{}) {$/;"	f
+Error	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Error(args ...interface{}) {$/;"	f
 Error	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go	/^func (e authError) Error() string {$/;"	f
 Error	Godeps/_workspace/src/github.com/coreos/etcd/client/cluster_error.go	/^func (ce *ClusterError) Error() string {$/;"	f
 Error	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func (e Error) Error() string {$/;"	f
@@ -1186,7 +1206,16 @@ ErrorCodeTTLNaN	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^	E
 ErrorCodeTestFailed	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^	ErrorCodeKeyNotFound  = 100$/;"	c
 ErrorCodeUnauthorized	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^	ErrorCodeDirNotEmpty  = 108$/;"	c
 ErrorCodeWatcherCleared	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^	ErrorCodeLeaderElect  = 301$/;"	c
+ErrorKey	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^var ErrorKey = "error"$/;"	v
+ErrorLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	FatalLevel$/;"	c
+Errorf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Errorf(format string, args ...interface{}) {$/;"	f
+Errorf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Errorf(format string, args ...interface{}) {$/;"	f
+Errorf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Errorf(format string, args ...interface{}) {$/;"	f
+Errorln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Errorln(args ...interface{}) {$/;"	f
+Errorln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Errorln(args ...interface{}) {$/;"	f
+Errorln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Errorln(args ...interface{}) {$/;"	f
 Etcd	etcdclient/etcdclient.go	/^type Etcd struct {$/;"	t
+EtcdPath	etcdclient/etcdclient.go	/^var EtcdPath = "http:\/\/127.0.0.1:2379"$/;"	v
 Event	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type Event struct {$/;"	t
 EventOrError	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type EventOrError struct {$/;"	t
 ExecConfig	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type ExecConfig struct {$/;"	t
@@ -1201,9 +1230,26 @@ ExecStart	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.
 ExecStart	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) ExecStart(id string, config *dockerclient.ExecConfig) error {$/;"	f
 Ext	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type Ext interface {$/;"	t
 FastpathLen	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x genInternal) FastpathLen() (l int) {$/;"	f
+Fatal	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Fatal(args ...interface{}) {$/;"	f
+Fatal	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Fatal(args ...interface{}) {$/;"	f
+Fatal	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Fatal(args ...interface{}) {$/;"	f
+FatalLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	PanicLevel Level = iota$/;"	c
+Fatalf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Fatalf(format string, args ...interface{}) {$/;"	f
+Fatalf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Fatalf(format string, args ...interface{}) {$/;"	f
+Fatalf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Fatalf(format string, args ...interface{}) {$/;"	f
+Fatalln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Fatalln(args ...interface{}) {$/;"	f
+Fatalln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Fatalln(args ...interface{}) {$/;"	f
+Fatalln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Fatalln(args ...interface{}) {$/;"	f
+Fields	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^type Fields map[string]interface{}$/;"	t
+Fire	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^func (hooks LevelHooks) Fire(level Level, entry *Entry) error {$/;"	f
+Fire	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^func (hook *SyslogHook) Fire(entry *logrus.Entry) error {$/;"	f
 Float32	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (_ checkOverflow) Float32(f float64) (overflow bool) {$/;"	f
-FromHumanSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func FromHumanSize(size string) (int64, error) {$/;"	f
-GB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	MB = 1000 * KB$/;"	c
+Format	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatters/logstash/logstash.go	/^func (f *LogstashFormatter) Format(entry *logrus.Entry) ([]byte, error) {$/;"	f
+Format	Godeps/_workspace/src/github.com/Sirupsen/logrus/json_formatter.go	/^func (f *JSONFormatter) Format(entry *Entry) ([]byte, error) {$/;"	f
+Format	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func (f *TextFormatter) Format(entry *Entry) ([]byte, error) {$/;"	f
+Formatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatter.go	/^type Formatter interface {$/;"	t
+FromHumanSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func FromHumanSize(size string) (int64, error) {$/;"	f
+GB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	MB = 1000 * KB$/;"	c
 Gen	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func Gen(w io.Writer, buildTags, pkgName, uid string, useUnsafe bool, ti *TypeInfos, typ ...reflect.Type) {$/;"	f
 GenHelperDecoder	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func GenHelperDecoder(d *Decoder) (genHelperDecoder, decDriver) {$/;"	f
 GenHelperEncoder	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func GenHelperEncoder(e *Encoder) (genHelperEncoder, encDriver) {$/;"	f
@@ -1215,16 +1261,22 @@ Get	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Get(n
 Get	Godeps/_workspace/src/golang.org/x/net/context/ctxhttp/ctxhttp.go	/^func Get(ctx context.Context, client *http.Client, url string) (*http.Response, error) {$/;"	f
 GetAll	Godeps/_workspace/src/github.com/gorilla/context/context.go	/^func GetAll(r *http.Request) map[interface{}]interface{} {$/;"	f
 GetAllOk	Godeps/_workspace/src/github.com/gorilla/context/context.go	/^func GetAllOk(r *http.Request) (map[interface{}]interface{}, bool) {$/;"	f
+GetContainerInfo	swarmclient/swarmclient.go	/^func (sc *SwarmClient) GetContainerInfo(containerId string) (*dockerclient.ContainerInfo, error) {$/;"	f
+GetContainersInfo	swarmclient/swarmclient.go	/^func (sc *SwarmClient) GetContainersInfo(containersIds []string) ([]dockerclient.ContainerInfo, int) {$/;"	f
 GetError	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) GetError() error {$/;"	f
 GetHandler	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) GetHandler() http.Handler {$/;"	f
+GetLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func GetLevel() Level {$/;"	f
 GetName	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) GetName() string {$/;"	f
 GetOk	Godeps/_workspace/src/github.com/gorilla/context/context.go	/^func GetOk(r *http.Request, key interface{}) (interface{}, bool) {$/;"	f
 GetOptions	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type GetOptions struct {$/;"	t
+GetRlimit	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^func (u *Ulimit) GetRlimit() (*Rlimit, error) {$/;"	f
 GetRole	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^func (r *httpAuthRoleAPI) GetRole(ctx context.Context, rolename string) (*Role, error) {$/;"	f
 GetRoute	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) GetRoute(name string) *Route {$/;"	f
 GetService	etcdclient/etcdclient.go	/^func (e *Etcd) GetService(serviceName string) (*service.Service, error) {$/;"	f
+GetService	service/service.go	/^func GetService(s *Service) (*ServiceInfo, error) {$/;"	f
+GetServices	etcdclient/etcdclient.go	/^func (e *Etcd) GetServices() ([]string, error) {$/;"	f
 GetUser	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go	/^func (u *httpAuthUserAPI) GetUser(ctx context.Context, username string) (*User, error) {$/;"	f
-GiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	MiB = 1024 * KiB$/;"	c
+GiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	MiB = 1024 * KiB$/;"	c
 GoRpc	Godeps/_workspace/src/github.com/ugorji/go/codec/rpc.go	/^var GoRpc goRpc$/;"	v
 GrantRoleKV	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^func (r *httpAuthRoleAPI) GrantRoleKV(ctx context.Context, rolename string, prefixes []string, permType PermissionType) (*Role, error) {$/;"	f
 GrantUser	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go	/^func (u *httpAuthUserAPI) GrantUser(ctx context.Context, username string, roles []string) (*User, error) {$/;"	f
@@ -1247,6 +1299,7 @@ HTTPRequest	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^fun
 Handle	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Handle(path string, handler http.Handler) *Route {$/;"	f
 Handle	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type Handle interface {$/;"	t
 HandleFunc	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) HandleFunc(path string, f func(http.ResponseWriter,$/;"	f
+HandleServiceFault	service/service.go	/^func HandleServiceFault(containers []dockerclient.ContainerInfo, service *Service) {$/;"	f
 Handler	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) Handler(handler http.Handler) *Route {$/;"	f
 HandlerFunc	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) HandlerFunc(f func(http.ResponseWriter, *http.Request)) *Route {$/;"	f
 HasExtensions	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func (f genHelperDecoder) HasExtensions() bool {$/;"	f
@@ -1255,11 +1308,13 @@ Head	Godeps/_workspace/src/golang.org/x/net/context/ctxhttp/ctxhttp.go	/^func He
 Headers	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Headers(pairs ...string) *Route {$/;"	f
 Headers	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) Headers(pairs ...string) *Route {$/;"	f
 HeadersRegexp	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) HeadersRegexp(pairs ...string) *Route {$/;"	f
+HeartbeatSecond	cli/manage.go	/^var HeartbeatSecond = 30$/;"	v
+Hook	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^type Hook interface {$/;"	t
 Host	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Host(tpl string) *Route {$/;"	f
 Host	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) Host(tpl string) *Route {$/;"	f
 HostConfig	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type HostConfig struct {$/;"	t
-HumanDuration	Godeps/_workspace/src/github.com/docker/docker/pkg/units/duration.go	/^func HumanDuration(d time.Duration) string {$/;"	f
-HumanSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func HumanSize(size float64) string {$/;"	f
+HumanDuration	Godeps/_workspace/src/github.com/docker/go-units/duration.go	/^func HumanDuration(d time.Duration) string {$/;"	f
+HumanSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func HumanSize(size float64) string {$/;"	f
 ID	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/id.go	/^type ID uint64$/;"	t
 IDFromString	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/id.go	/^func IDFromString(s string) (ID, error) {$/;"	f
 IDSlice	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/id.go	/^type IDSlice []ID$/;"	t
@@ -1271,10 +1326,20 @@ ImageInfo	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type 
 ImportImage	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) ImportImage(source string, repository string, tag string, tar io.Reader) (io.ReadCloser, error) {$/;"	f
 ImportImage	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) ImportImage(source string, repository string, tag string, tar io.Reader) (io.ReadCloser, error) {$/;"	f
 ImportImage	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) ImportImage(source string, repository string, tag string, tar io.Reader) (io.ReadCloser, error) {$/;"	f
+Info	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Info(args ...interface{}) {$/;"	f
+Info	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Info(args ...interface{}) {$/;"	f
+Info	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Info(args ...interface{}) {$/;"	f
 Info	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) Info() (*Info, error) {$/;"	f
 Info	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) Info() (*dockerclient.Info, error) {$/;"	f
 Info	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) Info() (*dockerclient.Info, error) {$/;"	f
 Info	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type Info struct {$/;"	t
+InfoLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	WarnLevel$/;"	c
+Infof	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Infof(format string, args ...interface{}) {$/;"	f
+Infof	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Infof(format string, args ...interface{}) {$/;"	f
+Infof	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Infof(format string, args ...interface{}) {$/;"	f
+Infoln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Infoln(args ...interface{}) {$/;"	f
+Infoln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Infoln(args ...interface{}) {$/;"	f
+Infoln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Infoln(args ...interface{}) {$/;"	f
 InspectContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) InspectContainer(id string) (*ContainerInfo, error) {$/;"	f
 InspectContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) InspectContainer(id string) (*dockerclient.ContainerInfo, error) {$/;"	f
 InspectContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) InspectContainer(id string) (*dockerclient.ContainerInfo, error) {$/;"	f
@@ -1292,10 +1357,14 @@ IsBuiltinType	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func 
 IsBuiltinType	Godeps/_workspace/src/github.com/ugorji/go/codec/noop.go	/^func (h *noopDrv) IsBuiltinType(rt uintptr) bool              { return false }$/;"	f
 IsJSONHandle	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func (f genHelperDecoder) IsJSONHandle() bool {$/;"	f
 IsJSONHandle	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func (f genHelperEncoder) IsJSONHandle() bool {$/;"	f
+IsTerminal	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_notwindows.go	/^func IsTerminal() bool {$/;"	f
+IsTerminal	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_solaris.go	/^func IsTerminal() bool {$/;"	f
+IsTerminal	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_windows.go	/^func IsTerminal() bool {$/;"	f
+JSONFormatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/json_formatter.go	/^type JSONFormatter struct {$/;"	t
 JsonHandle	Godeps/_workspace/src/github.com/ugorji/go/codec/json.go	/^type JsonHandle struct {$/;"	t
-KB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^const ($/;"	c
+KB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^const ($/;"	c
 KeysAPI	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type KeysAPI interface {$/;"	t
-KiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	PB = 1000 * TB$/;"	c
+KiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	PB = 1000 * TB$/;"	c
 KillContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) KillContainer(id, signal string) error {$/;"	f
 KillContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) KillContainer(id, signal string) error {$/;"	f
 KillContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) KillContainer(id, signal string) error {$/;"	f
@@ -1342,6 +1411,9 @@ Less	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (p string
 Less	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (p uintRvSlice) Less(i, j int) bool { return p[i].v < p[j].v }$/;"	f
 Less	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (p uintSlice) Less(i, j int) bool { return p[i] < p[j] }$/;"	f
 Less	Godeps/_workspace/src/gopkg.in/yaml.v2/sorter.go	/^func (l keyList) Less(i, j int) bool {$/;"	f
+Level	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^type Level uint8$/;"	t
+LevelHooks	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^type LevelHooks map[Level][]Hook$/;"	t
+Levels	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^func (hook *SyslogHook) Levels() []logrus.Level {$/;"	f
 List	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^func (m *httpMembersAPI) List(ctx context.Context) ([]Member, error) {$/;"	f
 ListContainers	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) ListContainers(all bool, size bool, filters string) ([]Container, error) {$/;"	f
 ListContainers	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) ListContainers(all bool, size bool, filters string) ([]dockerclient.Container, error) {$/;"	f
@@ -1363,12 +1435,15 @@ LoadImage	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.
 LoadImage	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) LoadImage(reader io.Reader) error {$/;"	f
 LogConfig	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type LogConfig struct {$/;"	t
 LogOptions	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type LogOptions struct {$/;"	t
-MB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	KB = 1000$/;"	c
+Logger	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^type Logger struct {$/;"	t
+LogstashFormatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatters/logstash/logstash.go	/^type LogstashFormatter struct {$/;"	t
+MB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	KB = 1000$/;"	c
 MapBySlice	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type MapBySlice interface {$/;"	t
 MapItem	Godeps/_workspace/src/gopkg.in/yaml.v2/yaml.go	/^type MapItem struct {$/;"	t
 MapSlice	Godeps/_workspace/src/gopkg.in/yaml.v2/yaml.go	/^type MapSlice []MapItem$/;"	t
 Marshal	Godeps/_workspace/src/gopkg.in/yaml.v2/yaml.go	/^func Marshal(in interface{}) (out []byte, err error) {$/;"	f
 MarshalJSON	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^func (m *memberCreateOrUpdateRequest) MarshalJSON() ([]byte, error) {$/;"	f
+MarshalYaml	service/service.go	/^func MarshalYaml(sc *ServiceConfig) (string, error) {$/;"	f
 Marshaler	Godeps/_workspace/src/gopkg.in/yaml.v2/yaml.go	/^type Marshaler interface {$/;"	t
 Match	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Match(req *http.Request, match *RouteMatch) bool {$/;"	f
 Match	Godeps/_workspace/src/github.com/gorilla/mux/regexp.go	/^func (r *routeRegexp) Match(req *http.Request, match *RouteMatch) bool {$/;"	f
@@ -1387,7 +1462,7 @@ MemoryStats	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^typ
 MethodNamePfx	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x *genV) MethodNamePfx(prefix string, prim bool) string {$/;"	f
 Methods	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Methods(methods ...string) *Route {$/;"	f
 Methods	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) Methods(methods ...string) *Route {$/;"	f
-MiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	KiB = 1024$/;"	c
+MiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	KiB = 1024$/;"	c
 MockClient	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^type MockClient struct {$/;"	t
 MonitorEvents	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) MonitorEvents(options *MonitorEventsOptions, stopChan <-chan struct{}) (<-chan EventOrError, error) {$/;"	f
 MonitorEvents	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) MonitorEvents(options *dockerclient.MonitorEventsOptions, stopChan <-chan struct{}) (<-chan dockerclient.EventOrError, error) {$/;"	f
@@ -1406,6 +1481,7 @@ NetworkCreateResponse	Godeps/_workspace/src/github.com/samalba/dockerclient/type
 NetworkDisconnect	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type NetworkDisconnect struct {$/;"	t
 NetworkResource	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type NetworkResource struct {$/;"	t
 NetworkStats	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type NetworkStats struct {$/;"	t
+New	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func New() *Logger {$/;"	f
 New	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^func New(cfg Config) (Client, error) {$/;"	f
 NewAuthAPI	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go	/^func NewAuthAPI(c Client) AuthAPI {$/;"	f
 NewAuthRoleAPI	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^func NewAuthRoleAPI(c Client) AuthRoleAPI {$/;"	f
@@ -1416,6 +1492,7 @@ NewDockerClient	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclie
 NewDockerClientTimeout	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func NewDockerClientTimeout(daemonUrl string, tlsConfig *tls.Config, timeout time.Duration) (*DockerClient, error) {$/;"	f
 NewEncoder	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func NewEncoder(w io.Writer, h Handle) *Encoder {$/;"	f
 NewEncoderBytes	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func NewEncoderBytes(out *[]byte, h Handle) *Encoder {$/;"	f
+NewEntry	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func NewEntry(logger *Logger) *Entry {$/;"	f
 NewEtcdClient	etcdclient/etcdclient.go	/^func NewEtcdClient(etcdpath string) (*Etcd, error) {$/;"	f
 NewKeysAPI	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func NewKeysAPI(c Client) KeysAPI {$/;"	f
 NewKeysAPIWithPrefix	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func NewKeysAPIWithPrefix(c Client, p string) KeysAPI {$/;"	f
@@ -1427,7 +1504,8 @@ NewRoute	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) 
 NewRouter	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func NewRouter() *Router {$/;"	f
 NewSRVDiscover	Godeps/_workspace/src/github.com/coreos/etcd/client/srv.go	/^func NewSRVDiscover() Discoverer {$/;"	f
 NewServer	api/server.go	/^func NewServer(hosts []string) *Server {$/;"	f
-NewSwarmClient	swarmclient/swarmclient.go	/^func NewSwarmClient() (*dockerclient.DockerClient, error) {$/;"	f
+NewSwarmClient	swarmclient/swarmclient.go	/^func NewSwarmClient() (*SwarmClient, error) {$/;"	f
+NewSyslogHook	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^func NewSyslogHook(network, raddr string, priority syslog.Priority, tag string) (*SyslogHook, error) {$/;"	f
 NewThreadsafeSet	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func NewThreadsafeSet(values ...string) *tsafeSet {$/;"	f
 NewTypeInfos	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func NewTypeInfos(tags []string) *TypeInfos {$/;"	f
 NewURLs	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urls.go	/^func NewURLs(strs []string) (URLs, error) {$/;"	f
@@ -1438,7 +1516,19 @@ Node	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type Node str
 Nodes	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type Nodes []*Node$/;"	t
 NoopHandle	Godeps/_workspace/src/github.com/ugorji/go/codec/noop.go	/^func NoopHandle(slen int) *noopHandle {$/;"	f
 NopClient	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^type NopClient struct {$/;"	t
-PB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	TB = 1000 * GB$/;"	c
+PB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	TB = 1000 * GB$/;"	c
+Panic	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Panic(args ...interface{}) {$/;"	f
+Panic	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Panic(args ...interface{}) {$/;"	f
+Panic	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Panic(args ...interface{}) {$/;"	f
+PanicLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^const ($/;"	c
+Panicf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Panicf(format string, args ...interface{}) {$/;"	f
+Panicf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Panicf(format string, args ...interface{}) {$/;"	f
+Panicf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Panicf(format string, args ...interface{}) {$/;"	f
+Panicln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Panicln(args ...interface{}) {$/;"	f
+Panicln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Panicln(args ...interface{}) {$/;"	f
+Panicln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Panicln(args ...interface{}) {$/;"	f
+ParseLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^func ParseLevel(lvl string) (Level, error) {$/;"	f
+ParseUlimit	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^func ParseUlimit(val string) (*Ulimit, error) {$/;"	f
 Path	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Path(tpl string) *Route {$/;"	f
 Path	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) Path(tpl string) *Route {$/;"	f
 PathPrefix	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) PathPrefix(tpl string) *Route {$/;"	f
@@ -1448,7 +1538,7 @@ PauseContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/
 PauseContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) PauseContainer(name string) error {$/;"	f
 PermissionType	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^type PermissionType int$/;"	t
 Permissions	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^type Permissions struct {$/;"	t
-PiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	TiB = 1024 * GiB$/;"	c
+PiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	TiB = 1024 * GiB$/;"	c
 Port	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type Port struct {$/;"	t
 PortBinding	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type PortBinding struct {$/;"	t
 Post	Godeps/_workspace/src/golang.org/x/net/context/ctxhttp/ctxhttp.go	/^func Post(ctx context.Context, client *http.Client, url string, bodyType string, body io.Reader) (*http.Response, error) {$/;"	f
@@ -1457,6 +1547,15 @@ PrevExist	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^	PrevIgn
 PrevExistType	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type PrevExistType string$/;"	t
 PrevIgnore	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^const ($/;"	c
 PrevNoExist	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^	PrevExist   = PrevExistType("true")$/;"	c
+Print	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Print(args ...interface{}) {$/;"	f
+Print	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Print(args ...interface{}) {$/;"	f
+Print	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Print(args ...interface{}) {$/;"	f
+Printf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Printf(format string, args ...interface{}) {$/;"	f
+Printf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Printf(format string, args ...interface{}) {$/;"	f
+Printf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Printf(format string, args ...interface{}) {$/;"	f
+Println	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Println(args ...interface{}) {$/;"	f
+Println	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Println(args ...interface{}) {$/;"	f
+Println	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Println(args ...interface{}) {$/;"	f
 PullImage	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) PullImage(name string, auth *AuthConfig) error {$/;"	f
 PullImage	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) PullImage(name string, auth *dockerclient.AuthConfig) error {$/;"	f
 PullImage	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) PullImage(name string, auth *dockerclient.AuthConfig) error {$/;"	f
@@ -1466,7 +1565,7 @@ PushImage	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.
 PushImage	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) PushImage(name, tag string, auth *dockerclient.AuthConfig) error {$/;"	f
 Queries	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Queries(pairs ...string) *Route {$/;"	f
 Queries	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) Queries(pairs ...string) *Route {$/;"	f
-RAMInBytes	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func RAMInBytes(size string) (int64, error) {$/;"	f
+RAMInBytes	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func RAMInBytes(size string) (int64, error) {$/;"	f
 RawExt	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type RawExt struct {$/;"	t
 Read	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (z *ioDecByteScanner) Read(p []byte) (n int, err error) {$/;"	f
 ReadArrayStart	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^func (d *bincDecDriver) ReadArrayStart() (length int) {$/;"	f
@@ -1496,12 +1595,14 @@ ReadResponseBody	Godeps/_workspace/src/github.com/ugorji/go/codec/rpc.go	/^func 
 ReadResponseHeader	Godeps/_workspace/src/github.com/ugorji/go/codec/msgpack.go	/^func (c *msgpackSpecRpcCodec) ReadResponseHeader(r *rpc.Response) error {$/;"	f
 ReadResponseHeader	Godeps/_workspace/src/github.com/ugorji/go/codec/rpc.go	/^func (c *goRpcCodec) ReadResponseHeader(r *rpc.Response) error {$/;"	f
 ReadWritePermission	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^	WritePermission$/;"	c
+Reader	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Reader() (*bytes.Buffer, error) {$/;"	f
 Remove	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^func (m *httpMembersAPI) Remove(ctx context.Context, memberID string) error {$/;"	f
 Remove	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (ts *tsafeSet) Remove(value string) {$/;"	f
 Remove	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^func (us *unsafeSet) Remove(value string) {$/;"	f
 RemoveContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) RemoveContainer(id string, force, volumes bool) error {$/;"	f
 RemoveContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) RemoveContainer(id string, force, volumes bool) error {$/;"	f
 RemoveContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) RemoveContainer(id string, force, volumes bool) error {$/;"	f
+RemoveContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) RemoveContainer(id string, force, volumes bool) error {$/;"	f
 RemoveImage	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) RemoveImage(name string, force bool) ([]*ImageDelete, error) {$/;"	f
 RemoveImage	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) RemoveImage(name string, force bool) ([]*dockerclient.ImageDelete, error) {$/;"	f
 RemoveImage	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) RemoveImage(name string, force bool) ([]*dockerclient.ImageDelete, error) {$/;"	f
@@ -1520,14 +1621,18 @@ Reset	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Deco
 Reset	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (e *Encoder) Reset(w io.Writer) {$/;"	f
 ResetBytes	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) ResetBytes(in []byte) {$/;"	f
 ResetBytes	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (e *Encoder) ResetBytes(out *[]byte) {$/;"	f
+Resources	service/service.go	/^type Resources struct {$/;"	t
 RespContainersCreate	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type RespContainersCreate struct {$/;"	t
 Response	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type Response struct {$/;"	t
 RestartContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) RestartContainer(id string, timeout int) error {$/;"	f
 RestartContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) RestartContainer(id string, timeout int) error {$/;"	f
 RestartContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) RestartContainer(id string, timeout int) error {$/;"	f
+RestartContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) RestartContainer(id string, timeout int) error {$/;"	f
 RestartPolicy	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type RestartPolicy struct {$/;"	t
+RestartService	service/service.go	/^func RestartService(s *Service) error {$/;"	f
 RevokeRoleKV	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^func (r *httpAuthRoleAPI) RevokeRoleKV(ctx context.Context, rolename string, prefixes []string, permType PermissionType) (*Role, error) {$/;"	f
 RevokeUser	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go	/^func (u *httpAuthUserAPI) RevokeUser(ctx context.Context, username string, roles []string) (*User, error) {$/;"	f
+Rlimit	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^type Rlimit struct {$/;"	t
 Role	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^type Role struct {$/;"	t
 Route	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^type Route struct {$/;"	t
 RouteMatch	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^type RouteMatch struct {$/;"	t
@@ -1546,9 +1651,11 @@ ServerCodec	Godeps/_workspace/src/github.com/ugorji/go/codec/msgpack.go	/^func (
 ServerCodec	Godeps/_workspace/src/github.com/ugorji/go/codec/rpc.go	/^func (x goRpc) ServerCodec(conn io.ReadWriteCloser, h Handle) rpc.ServerCodec {$/;"	f
 Service	service/service.go	/^type Service struct {$/;"	t
 ServiceConfig	service/service.go	/^type ServiceConfig struct {$/;"	t
+ServiceFunc	service/service.go	/^type ServiceFunc func(*Service) error$/;"	t
+ServiceInfo	service/service.go	/^type ServiceInfo struct {$/;"	t
 ServiceMetadata	service/service.go	/^type ServiceMetadata struct {$/;"	t
 ServiceSpec	service/service.go	/^type ServiceSpec struct {$/;"	t
-ServicesInfo	cli/manage.go	/^var ServicesInfo []serviceInfo$/;"	v
+ServicesInfo	service/service.go	/^var ServicesInfo []ServiceInfo$/;"	v
 Set	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func (k *httpKeysAPI) Set(ctx context.Context, key, val string, opts *SetOptions) (*Response, error) {$/;"	f
 Set	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/set.go	/^type Set interface {$/;"	t
 Set	Godeps/_workspace/src/github.com/gorilla/context/context.go	/^func Set(r *http.Request, key, val interface{}) {$/;"	f
@@ -1556,28 +1663,35 @@ SetBytesExt	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^func (h *
 SetBytesExt	Godeps/_workspace/src/github.com/ugorji/go/codec/msgpack.go	/^func (h *MsgpackHandle) SetBytesExt(rt reflect.Type, tag uint64, ext BytesExt) (err error) {$/;"	f
 SetBytesExt	Godeps/_workspace/src/github.com/ugorji/go/codec/simple.go	/^func (h *SimpleHandle) SetBytesExt(rt reflect.Type, tag uint64, ext BytesExt) (err error) {$/;"	f
 SetExt	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (o *extHandle) SetExt(rt reflect.Type, tag uint64, ext Ext) (err error) {$/;"	f
+SetFormatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func SetFormatter(formatter Formatter) {$/;"	f
 SetHandler	api/server.go	/^func (d *dispatcher) SetHandler(handler http.Handler) {$/;"	f
 SetHandler	api/server.go	/^func (s *Server) SetHandler(handler http.Handler) {$/;"	f
 SetInterfaceExt	Godeps/_workspace/src/github.com/ugorji/go/codec/cbor.go	/^func (h *CborHandle) SetInterfaceExt(rt reflect.Type, tag uint64, ext InterfaceExt) (err error) {$/;"	f
 SetInterfaceExt	Godeps/_workspace/src/github.com/ugorji/go/codec/json.go	/^func (h *JsonHandle) SetInterfaceExt(rt reflect.Type, tag uint64, ext InterfaceExt) (err error) {$/;"	f
+SetLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func SetLevel(level Level) {$/;"	f
 SetOptions	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type SetOptions struct {$/;"	t
+SetOutput	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func SetOutput(out io.Writer) {$/;"	f
 SignedInt	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (_ checkOverflow) SignedInt(v uint64) (i int64, overflow bool) {$/;"	f
 SimpleHandle	Godeps/_workspace/src/github.com/ugorji/go/codec/simple.go	/^type SimpleHandle struct {$/;"	t
 SkipRouter	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^var SkipRouter = errors.New("skip this router")$/;"	v
 Sort	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urls.go	/^func (us *URLs) Sort() {$/;"	f
+StandardLogger	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func StandardLogger() *Logger {$/;"	f
 StartContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) StartContainer(id string, config *HostConfig) error {$/;"	f
 StartContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) StartContainer(id string, config *dockerclient.HostConfig) error {$/;"	f
 StartContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) StartContainer(id string, config *dockerclient.HostConfig) error {$/;"	f
+StartContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) StartContainer(id string, config *dockerclient.HostConfig) error {$/;"	f
 StartMonitorEvents	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) StartMonitorEvents(cb Callback, ec chan error, args ...interface{}) {$/;"	f
 StartMonitorEvents	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) StartMonitorEvents(cb dockerclient.Callback, ec chan error, args ...interface{}) {$/;"	f
 StartMonitorEvents	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) StartMonitorEvents(cb dockerclient.Callback, ec chan error, args ...interface{}) {$/;"	f
 StartMonitorStats	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) StartMonitorStats(id string, cb StatCallback, ec chan error, args ...interface{}) {$/;"	f
 StartMonitorStats	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) StartMonitorStats(id string, cb dockerclient.StatCallback, ec chan error, args ...interface{}) {$/;"	f
 StartMonitorStats	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) StartMonitorStats(id string, cb dockerclient.StatCallback, ec chan error, args ...interface{}) {$/;"	f
+StartService	service/service.go	/^func StartService(s *Service) error {$/;"	f
 StatCallback	Godeps/_workspace/src/github.com/samalba/dockerclient/interface.go	/^type StatCallback func(string, *Stats, chan error, ...interface{})$/;"	t
 State	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type State struct {$/;"	t
 StateString	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^func (s *State) StateString() string {$/;"	f
 Stats	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type Stats struct {$/;"	t
+StdLogger	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^type StdLogger interface {$/;"	t
 StopAllMonitorEvents	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) StopAllMonitorEvents() {$/;"	f
 StopAllMonitorEvents	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) StopAllMonitorEvents() {$/;"	f
 StopAllMonitorEvents	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) StopAllMonitorEvents() {$/;"	f
@@ -1587,11 +1701,16 @@ StopAllMonitorStats	Godeps/_workspace/src/github.com/samalba/dockerclient/nopcli
 StopContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) StopContainer(id string, timeout int) error {$/;"	f
 StopContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) StopContainer(id string, timeout int) error {$/;"	f
 StopContainer	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) StopContainer(id string, timeout int) error {$/;"	f
+StopContainer	swarmclient/swarmclient.go	/^func (sc *SwarmClient) StopContainer(id string, timeout int) error {$/;"	f
+StopService	service/service.go	/^func StopService(s *Service) error {$/;"	f
 StrictSlash	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) StrictSlash(value bool) *Router {$/;"	f
+String	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) String() (string, error) {$/;"	f
+String	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^func (level Level) String() string {$/;"	f
 String	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func (n *Node) String() string {$/;"	f
 String	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/id.go	/^func (i ID) String() string {$/;"	f
 String	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urls.go	/^func (us URLs) String() string {$/;"	f
 String	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urlsmap.go	/^func (c URLsMap) String() string {$/;"	f
+String	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^func (u *Ulimit) String() string {$/;"	f
 String	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^func (s *State) String() string {$/;"	f
 String	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func (c *cancelCtx) String() string {$/;"	f
 String	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func (c *timerCtx) String() string {$/;"	f
@@ -1623,15 +1742,22 @@ Swap	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (p string
 Swap	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (p uintRvSlice) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }$/;"	f
 Swap	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (p uintSlice) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }$/;"	f
 Swap	Godeps/_workspace/src/gopkg.in/yaml.v2/sorter.go	/^func (l keyList) Swap(i, j int) { l[i], l[j] = l[j], l[i] }$/;"	f
+SwarmClient	swarmclient/swarmclient.go	/^type SwarmClient struct {$/;"	t
+SwarmHost	swarmclient/swarmclient.go	/^var SwarmHost = "http:\/\/127.0.0.1"$/;"	v
+SwarmPort	swarmclient/swarmclient.go	/^var SwarmPort = ":2375"$/;"	v
 Sync	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^func (c *httpClusterClient) Sync(ctx context.Context) error {$/;"	f
-TB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	GB = 1000 * MB$/;"	c
+SyslogHook	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^type SyslogHook struct {$/;"	t
+TB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	GB = 1000 * MB$/;"	c
 TODO	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func TODO() Context {$/;"	f
 TTLDuration	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func (n *Node) TTLDuration() time.Duration {$/;"	f
 TagImage	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) TagImage(nameOrID string, repo string, tag string, force bool) error {$/;"	f
 TagImage	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^func (client *MockClient) TagImage(nameOrID string, repo string, tag string, force bool) error {$/;"	f
 TagImage	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^func (client *NopClient) TagImage(nameOrID string, repo string, tag string, force bool) error {$/;"	f
+Termios	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_bsd.go	/^type Termios syscall.Termios$/;"	t
+Termios	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_linux.go	/^type Termios syscall.Termios$/;"	t
+TextFormatter	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^type TextFormatter struct {$/;"	t
 ThrottlingData	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type ThrottlingData struct {$/;"	t
-TiB	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	GiB = 1024 * MiB$/;"	c
+TiB	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	GiB = 1024 * MiB$/;"	c
 TimeRtidIfBinc	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func (f genHelperDecoder) TimeRtidIfBinc() uintptr {$/;"	f
 TimeRtidIfBinc	Godeps/_workspace/src/github.com/ugorji/go/codec/gen-helper.generated.go	/^func (f genHelperEncoder) TimeRtidIfBinc() uintptr {$/;"	f
 TryDecodeAsNil	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^func (d *bincDecDriver) TryDecodeAsNil() bool {$/;"	f
@@ -1653,8 +1779,10 @@ URLs	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urlsmap.go	/^func (c
 URLsMap	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urlsmap.go	/^type URLsMap map[string]URLs$/;"	t
 Uint	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (_ checkOverflow) Uint(v uint64, bitsize uint8) (overflow bool) {$/;"	f
 Uint64Slice	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/slice.go	/^type Uint64Slice []uint64$/;"	t
+Ulimit	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^type Ulimit struct {$/;"	t
 Ulimit	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type Ulimit struct {$/;"	t
 Unmarshal	Godeps/_workspace/src/gopkg.in/yaml.v2/yaml.go	/^func Unmarshal(in []byte, out interface{}) (err error) {$/;"	f
+UnmarshalConfig	main.go	/^func UnmarshalConfig(path string) error {$/;"	f
 UnmarshalJSON	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^func (c *memberCollection) UnmarshalJSON(data []byte) error {$/;"	f
 UnmarshalYaml	service/service.go	/^func UnmarshalYaml(in []byte) (*ServiceConfig, error) {$/;"	f
 Unmarshaler	Godeps/_workspace/src/gopkg.in/yaml.v2/yaml.go	/^type Unmarshaler interface {$/;"	t
@@ -1667,6 +1795,7 @@ Update	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^func (m 
 UpdateExt	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (x *setExtWrapper) UpdateExt(dest interface{}, v interface{}) {$/;"	f
 UpdateExt	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (x addExtWrapper) UpdateExt(dest interface{}, v interface{}) {$/;"	f
 UpdateExt	Godeps/_workspace/src/github.com/ugorji/go/codec/time.go	/^func (x timeExt) UpdateExt(v interface{}, src interface{}) {$/;"	f
+UpdateServiceContainerIds	etcdclient/etcdclient.go	/^func (e *Etcd) UpdateServiceContainerIds(serviceName string, containerIds []string) error {$/;"	f
 User	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go	/^type User struct {$/;"	t
 Value	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func (*emptyCtx) Value(key interface{}) interface{} {$/;"	f
 Value	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func (c *valueCtx) Value(key interface{}) interface{} {$/;"	f
@@ -1686,12 +1815,39 @@ Wait	Godeps/_workspace/src/github.com/samalba/dockerclient/nopclient/nop.go	/^fu
 WaitResult	Godeps/_workspace/src/github.com/samalba/dockerclient/types.go	/^type WaitResult struct {$/;"	t
 Walk	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) Walk(walkFn WalkFunc) error {$/;"	f
 WalkFunc	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^type WalkFunc func(route *Route, router *Router, ancestors []*Route) error$/;"	t
-WatchOnce	etcdclient/etcdclient.go	/^func (e *Etcd) WatchOnce() ([]string, error) {$/;"	f
+Warn	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warn(args ...interface{}) {$/;"	f
+Warn	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warn(args ...interface{}) {$/;"	f
+Warn	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warn(args ...interface{}) {$/;"	f
+WarnLevel	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	ErrorLevel$/;"	c
+Warnf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warnf(format string, args ...interface{}) {$/;"	f
+Warnf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warnf(format string, args ...interface{}) {$/;"	f
+Warnf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warnf(format string, args ...interface{}) {$/;"	f
+Warning	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warning(args ...interface{}) {$/;"	f
+Warning	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warning(args ...interface{}) {$/;"	f
+Warning	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warning(args ...interface{}) {$/;"	f
+Warningf	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warningf(format string, args ...interface{}) {$/;"	f
+Warningf	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warningf(format string, args ...interface{}) {$/;"	f
+Warningf	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warningf(format string, args ...interface{}) {$/;"	f
+Warningln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warningln(args ...interface{}) {$/;"	f
+Warningln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warningln(args ...interface{}) {$/;"	f
+Warningln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warningln(args ...interface{}) {$/;"	f
+Warnln	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) Warnln(args ...interface{}) {$/;"	f
+Warnln	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func Warnln(args ...interface{}) {$/;"	f
+Warnln	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) Warnln(args ...interface{}) {$/;"	f
 Watcher	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func (k *httpKeysAPI) Watcher(key string, opts *WatcherOptions) Watcher {$/;"	f
 Watcher	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type Watcher interface {$/;"	t
 WatcherOptions	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type WatcherOptions struct {$/;"	t
 WithCancel	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func WithCancel(parent Context) (ctx Context, cancel CancelFunc) {$/;"	f
 WithDeadline	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func WithDeadline(parent Context, deadline time.Time) (Context, CancelFunc) {$/;"	f
+WithError	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) WithError(err error) *Entry {$/;"	f
+WithError	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func WithError(err error) *Entry {$/;"	f
+WithError	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) WithError(err error) *Entry {$/;"	f
+WithField	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) WithField(key string, value interface{}) *Entry {$/;"	f
+WithField	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func WithField(key string, value interface{}) *Entry {$/;"	f
+WithField	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) WithField(key string, value interface{}) *Entry {$/;"	f
+WithFields	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) WithFields(fields Fields) *Entry {$/;"	f
+WithFields	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^func WithFields(fields Fields) *Entry {$/;"	f
+WithFields	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^func (logger *Logger) WithFields(fields Fields) *Entry {$/;"	f
 WithTimeout	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func WithTimeout(parent Context, timeout time.Duration) (Context, CancelFunc) {$/;"	f
 WithValue	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func WithValue(parent Context, key interface{}, val interface{}) Context {$/;"	f
 Write	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (o *simpleIoEncWriterWriter) Write(p []byte) (n int, err error) {$/;"	f
@@ -1705,6 +1861,10 @@ WriteRequest	Godeps/_workspace/src/github.com/ugorji/go/codec/rpc.go	/^func (c *
 WriteResponse	Godeps/_workspace/src/github.com/ugorji/go/codec/msgpack.go	/^func (c *msgpackSpecRpcCodec) WriteResponse(r *rpc.Response, body interface{}) error {$/;"	f
 WriteResponse	Godeps/_workspace/src/github.com/ugorji/go/codec/rpc.go	/^func (c *goRpcCodec) WriteResponse(r *rpc.Response, body interface{}) error {$/;"	f
 WriteString	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (o *simpleIoEncWriterWriter) WriteString(s string) (n int, err error) {$/;"	f
+Writer	Godeps/_workspace/src/github.com/Sirupsen/logrus/writer.go	/^func (logger *Logger) Writer() *io.PipeWriter {$/;"	f
+_	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	_ StdLogger = &Entry{}$/;"	v
+_	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^	_ StdLogger = &log.Logger{}$/;"	v
+_	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^var ($/;"	v
 _	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^	_               \/\/ open slot$/;"	c
 _	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^	bincFlBin32$/;"	c
 _	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^	bincFlBin64$/;"	c
@@ -1742,6 +1902,7 @@ api	api/handlers.go	/^package api$/;"	p
 api	api/primary.go	/^package api$/;"	p
 api	api/server.go	/^package api$/;"	p
 api	api/server_unix.go	/^package api$/;"	p
+appendKeyValue	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func (f *TextFormatter) appendKeyValue(b *bytes.Buffer, key string, value interface{}) {$/;"	f
 appendStringAsBytes	Godeps/_workspace/src/github.com/ugorji/go/codec/json.go	/^func (d *jsonDecDriver) appendStringAsBytes() {$/;"	f
 arr2str	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x *genRunner) arr2str(t reflect.Type, s string) string {$/;"	f
 arrayCannotExpand	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) arrayCannotExpand(sliceLen, streamLen int) {$/;"	f
@@ -1760,11 +1921,12 @@ authUserAPIList	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go
 authedAction	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type authedAction struct {$/;"	t
 background	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^var ($/;"	v
 base60float	Godeps/_workspace/src/gopkg.in/yaml.v2/encode.go	/^var base60float = regexp.MustCompile(`^[-+]?[0-9][0-9_]*(?::[0-5]?[0-9])+(?:\\.[0-9_]*)?$`)$/;"	v
+baseTimestamp	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^var ($/;"	v
 bigen	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^var ($/;"	v
 bigenHelper	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type bigenHelper struct {$/;"	t
-binaryAbbrs	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^var binaryAbbrs = []string{"B", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"}$/;"	v
+binaryAbbrs	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^var binaryAbbrs = []string{"B", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"}$/;"	v
 binaryEncodingType	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type binaryEncodingType struct{}$/;"	t
-binaryMap	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	decimalMap = unitMap{"k": KB, "m": MB, "g": GB, "t": TB, "p": PB}$/;"	v
+binaryMap	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	decimalMap = unitMap{"k": KB, "m": MB, "g": GB, "t": TB, "p": PB}$/;"	v
 binaryMarshal	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (f *encFnInfo) binaryMarshal(rv reflect.Value) {$/;"	f
 binaryMarshalerTyp	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^	mapBySliceTyp = reflect.TypeOf((*MapBySlice)(nil)).Elem()$/;"	v
 binaryUnmarshal	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (f *decFnInfo) binaryUnmarshal(rv reflect.Value) {$/;"	f
@@ -1799,6 +1961,7 @@ bincVdString	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^	bincVdF
 bincVdSymbol	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^	bincVdUnicodeOther$/;"	c
 bincVdTimestamp	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^	bincVdMap$/;"	c
 bincVdUnicodeOther	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^	bincVdSmallInt$/;"	c
+blue	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	yellow  = 33$/;"	c
 bom_UTF16BE	Godeps/_workspace/src/gopkg.in/yaml.v2/readerc.go	/^	bom_UTF16LE = "\\xff\\xfe"$/;"	c
 bom_UTF16LE	Godeps/_workspace/src/gopkg.in/yaml.v2/readerc.go	/^	bom_UTF8    = "\\xef\\xbb\\xbf"$/;"	c
 bom_UTF8	Godeps/_workspace/src/gopkg.in/yaml.v2/readerc.go	/^const ($/;"	c
@@ -1873,6 +2036,7 @@ cborMajorTag	Godeps/_workspace/src/github.com/ugorji/go/codec/cbor.go	/^	cborMaj
 cborMajorText	Godeps/_workspace/src/github.com/ugorji/go/codec/cbor.go	/^	cborMajorBytes$/;"	c
 cborMajorUint	Godeps/_workspace/src/github.com/ugorji/go/codec/cbor.go	/^const ($/;"	c
 charEncoding	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type charEncoding uint8$/;"	t
+checkFileIsExist	main.go	/^func checkFileIsExist(filename string) bool {$/;"	f
 checkForSelfer	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x *genRunner) checkForSelfer(t reflect.Type, varname string) bool {$/;"	f
 checkOverflow	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type checkOverflow struct{}$/;"	t
 checkPairs	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func checkPairs(pairs ...string) (int, error) {$/;"	f
@@ -1953,6 +2117,7 @@ context	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^package cont
 contextKey	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^type contextKey int$/;"	t
 create	cli/create.go	/^func create(localfilepath string, etcdpath string) error {$/;"	f
 createInOrderAction	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type createInOrderAction struct {$/;"	t
+createService	api/handlers.go	/^func createService(w http.ResponseWriter, r *http.Request) {$/;"	f
 credentials	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type credentials struct {$/;"	t
 ctxhttp	Godeps/_workspace/src/golang.org/x/net/context/ctxhttp/cancelreq.go	/^package ctxhttp$/;"	p
 ctxhttp	Godeps/_workspace/src/golang.org/x/net/context/ctxhttp/cancelreq_go14.go	/^package ctxhttp$/;"	p
@@ -1995,8 +2160,8 @@ decTryAssignPrimitive	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^
 decUint	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^func (d *bincDecDriver) decUint() (v uint64) {$/;"	f
 decUint	Godeps/_workspace/src/github.com/ugorji/go/codec/cbor.go	/^func (d *cborDecDriver) decUint() (ui uint64) {$/;"	f
 decVar	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x *genRunner) decVar(varname string, t reflect.Type, canBeNil bool) {$/;"	f
-decimalMap	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^var ($/;"	v
-decimapAbbrs	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^var decimapAbbrs = []string{"B", "kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"}$/;"	v
+decimalMap	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^var ($/;"	v
+decimapAbbrs	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^var decimapAbbrs = []string{"B", "kB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"}$/;"	v
 decode	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) decode(iv interface{}) {$/;"	f
 decodeExtV	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^func (d *bincDecDriver) decodeExtV(verifyTag bool, tag byte) (xtag byte, xbs []byte) {$/;"	f
 decodeExtV	Godeps/_workspace/src/github.com/ugorji/go/codec/msgpack.go	/^func (d *msgpackDecDriver) decodeExtV(verifyTag bool, tag byte) (xtag byte, xbs []byte) {$/;"	f
@@ -2017,6 +2182,7 @@ defaultV2MembersPrefix	Godeps/_workspace/src/github.com/coreos/etcd/client/membe
 default_tag_directives	Godeps/_workspace/src/gopkg.in/yaml.v2/parserc.go	/^var default_tag_directives = []yaml_tag_directive_t{$/;"	v
 delete	cli/delete.go	/^func delete(serviceName string, etcdPath string) error {$/;"	f
 deleteAction	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type deleteAction struct {$/;"	t
+deleteService	api/handlers.go	/^func deleteService(w http.ResponseWriter, r *http.Request) {$/;"	f
 derefForIsEmptyValue	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^	checkStructForEmptyValue = false$/;"	c
 destroy	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (p *parser) destroy() {$/;"	f
 destroy	Godeps/_workspace/src/gopkg.in/yaml.v2/encode.go	/^func (e *encoder) destroy() {$/;"	f
@@ -2028,6 +2194,7 @@ doRequest	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	
 doRpcClientToGoSvc	Godeps/_workspace/src/github.com/ugorji/go/codec/test.py	/^def doRpcClientToGoSvc(port):$/;"	f
 doRpcClientToPythonSvc	Godeps/_workspace/src/github.com/ugorji/go/codec/test.py	/^def doRpcClientToPythonSvc(port):$/;"	f
 doRpcServer	Godeps/_workspace/src/github.com/ugorji/go/codec/test.py	/^def doRpcServer(port, stopTimeSec):$/;"	f
+doService	api/handlers.go	/^func doService(w http.ResponseWriter, r *http.Request, commond service.ServiceFunc, comstr string) {$/;"	f
 doStreamRequest	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) doStreamRequest(method string, path string, in io.Reader, headers map[string]string) (io.ReadCloser, error) {$/;"	f
 dockerclient	Godeps/_workspace/src/github.com/samalba/dockerclient/auth.go	/^package dockerclient$/;"	p
 dockerclient	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^package dockerclient$/;"	p
@@ -2086,7 +2253,6 @@ errTooManyRedirectChecks	Godeps/_workspace/src/github.com/coreos/etcd/client/cli
 error	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) error(err error) {$/;"	f
 errorf	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) errorf(format string, params ...interface{}) {$/;"	f
 errorf	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (e *Encoder) errorf(format string, params ...interface{}) {$/;"	f
-etcdWatcher	cli/manage.go	/^func etcdWatcher(servicesInfo []serviceInfo) {$/;"	f
 etcdclient	etcdclient/etcdclient.go	/^package etcdclient$/;"	p
 eventCallback	Godeps/_workspace/src/github.com/samalba/dockerclient/examples/events.go	/^func eventCallback(e *dockerclient.Event, ec chan error, args ...interface{}) {$/;"	f
 eventsResp	Godeps/_workspace/src/github.com/samalba/dockerclient/example_responses.go	/^var eventsResp = `{"status":"pull","id":"nginx:latest","time":1428620433}{"status":"create","id":"9b818c3b8291708fdcecd7c4086b75c222cb503be10a93d9c11040886032a48b","from":"nginx:latest","time":1428620433}{"status":"start","id":"9b818c3b8291708fdcecd7c4086b75c222cb503be10a93d9c11040886032a48b","from":"nginx:latest","time":1428620433}{"status":"die","id":"9b818c3b8291708fdcecd7c4086b75c222cb503be10a93d9c11040886032a48b","from":"nginx:latest","time":1428620442}{"status":"create","id":"352d0b412aae5a5d2b14ae9d88be59dc276602d9edb9dcc33e138e475b3e4720","from":"52.11.96.81\/foobar\/ubuntu:latest","time":1428620444}{"status":"start","id":"352d0b412aae5a5d2b14ae9d88be59dc276602d9edb9dcc33e138e475b3e4720","from":"52.11.96.81\/foobar\/ubuntu:latest","time":1428620444}{"status":"die","id":"352d0b412aae5a5d2b14ae9d88be59dc276602d9edb9dcc33e138e475b3e4720","from":"52.11.96.81\/foobar\/ubuntu:latest","time":1428620444}{"status":"pull","id":"debian:latest","time":1428620453}{"status":"create","id":"668887b5729946546b3072655dc6da08f0e3210111b68b704eb842adfce53f6c","from":"debian:latest","time":1428620453}{"status":"start","id":"668887b5729946546b3072655dc6da08f0e3210111b68b704eb842adfce53f6c","from":"debian:latest","time":1428620453}{"status":"die","id":"668887b5729946546b3072655dc6da08f0e3210111b68b704eb842adfce53f6c","from":"debian:latest","time":1428620453}{"status":"create","id":"eb4a19ec21ab29bbbffbf3ee2e2df9d99cb749780e1eff06a591cee5ba505180","from":"nginx:latest","time":1428620458}{"status":"start","id":"eb4a19ec21ab29bbbffbf3ee2e2df9d99cb749780e1eff06a591cee5ba505180","from":"nginx:latest","time":1428620458}{"status":"pause","id":"eb4a19ec21ab29bbbffbf3ee2e2df9d99cb749780e1eff06a591cee5ba505180","from":"nginx:latest","time":1428620462}{"status":"unpause","id":"eb4a19ec21ab29bbbffbf3ee2e2df9d99cb749780e1eff06a591cee5ba505180","from":"nginx:latest","time":1428620466}{"status":"die","id":"eb4a19ec21ab29bbbffbf3ee2e2df9d99cb749780e1eff06a591cee5ba505180","from":"nginx:latest","time":1428620469}`$/;"	v
@@ -2734,7 +2900,9 @@ getNamedRoutes	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Ro
 getNamedRoutes	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) getNamedRoutes() map[string]*Route {$/;"	f
 getRegexpGroup	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func (r *Router) getRegexpGroup() *routeRegexpGroup {$/;"	f
 getRegexpGroup	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) getRegexpGroup() *routeRegexpGroup {$/;"	f
+getService	api/handlers.go	/^func getService(w http.ResponseWriter, r *http.Request) {$/;"	f
 getServices	api/handlers.go	/^func getServices(w http.ResponseWriter, r *http.Request) {$/;"	f
+getServicesInfo	api/handlers.go	/^func getServicesInfo(w http.ResponseWriter, r *http.Request) {$/;"	f
 getStats	Godeps/_workspace/src/github.com/samalba/dockerclient/dockerclient.go	/^func (client *DockerClient) getStats(id string, cb StatCallback, ec chan error, args ...interface{}) {$/;"	f
 getStructInfo	Godeps/_workspace/src/gopkg.in/yaml.v2/yaml.go	/^func getStructInfo(st reflect.Type) (*structInfo, error) {$/;"	f
 getTypeInfo	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (x *BasicHandle) getTypeInfo(rtid uintptr, rt reflect.Type) (pti *typeInfo) {$/;"	f
@@ -2744,6 +2912,8 @@ getValueForUnmarshalInterface	Godeps/_workspace/src/github.com/ugorji/go/codec/d
 get_test_data_list	Godeps/_workspace/src/github.com/ugorji/go/codec/test.py	/^def get_test_data_list():$/;"	f
 goRpc	Godeps/_workspace/src/github.com/ugorji/go/codec/rpc.go	/^type goRpc struct{}$/;"	t
 goRpcCodec	Godeps/_workspace/src/github.com/ugorji/go/codec/rpc.go	/^type goRpcCodec struct {$/;"	t
+gray	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	blue    = 34$/;"	c
+green	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	red     = 31$/;"	c
 grow	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (z *bytesEncWriter) grow(n int) (oldcursor int) {$/;"	f
 growCap	Godeps/_workspace/src/github.com/ugorji/go/codec/helper_internal.go	/^func growCap(oldCap, unit, num int) (newCap int) {$/;"	f
 hIsEmptyValue	Godeps/_workspace/src/github.com/ugorji/go/codec/helper_internal.go	/^func hIsEmptyValue(v reflect.Value, deref, checkStruct bool) bool {$/;"	f
@@ -2761,6 +2931,7 @@ httpAuthUserAPI	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go
 httpClient	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type httpClient interface {$/;"	t
 httpClientFactory	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type httpClientFactory func(url.URL) httpClient$/;"	t
 httpClusterClient	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type httpClusterClient struct {$/;"	t
+httpError	api/handlers.go	/^func httpError(w http.ResponseWriter, err string, status int) {$/;"	f
 httpKeysAPI	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type httpKeysAPI struct {$/;"	t
 httpMembersAPI	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^type httpMembersAPI struct {$/;"	t
 httpWatcher	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type httpWatcher struct {$/;"	t
@@ -2769,6 +2940,9 @@ implementsIntf	Godeps/_workspace/src/github.com/ugorji/go/codec/helper_internal.
 index	Godeps/_workspace/src/github.com/ugorji/go/codec/fast-path.generated.go	/^func (x *fastpathA) index(rtid uintptr) int {$/;"	f
 index	Godeps/_workspace/src/github.com/ugorji/go/codec/fast-path.not.go	/^func (x fastpathA) index(rtid uintptr) int { return -1 }$/;"	f
 indexForEncName	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (ti *typeInfo) indexForEncName(name string) int {$/;"	f
+init	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/basic/basic.go	/^func init() {$/;"	f
+init	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/hook/hook.go	/^func init() {$/;"	f
+init	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func init() {$/;"	f
 init	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.generated.go	/^func init() {$/;"	f
 init	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func init() {$/;"	f
 init	Godeps/_workspace/src/github.com/ugorji/go/codec/fast-path.generated.go	/^func init() {$/;"	f
@@ -2796,6 +2970,8 @@ ioDecReader	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^type io
 ioEncStringWriter	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^type ioEncStringWriter interface {$/;"	t
 ioEncWriter	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^type ioEncWriter struct {$/;"	t
 ioEncWriterWriter	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^type ioEncWriterWriter interface {$/;"	t
+ioctlReadTermios	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_bsd.go	/^const ioctlReadTermios = syscall.TIOCGETA$/;"	c
+ioctlReadTermios	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_linux.go	/^const ioctlReadTermios = syscall.TCGETS$/;"	c
 isBase60Float	Godeps/_workspace/src/gopkg.in/yaml.v2/encode.go	/^func isBase60Float(s string) (result bool) {$/;"	f
 isBinary	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (_ binaryEncodingType) isBinary() bool { return true }$/;"	f
 isBinary	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (_ textEncodingType) isBinary() bool { return false }$/;"	f
@@ -2804,6 +2980,7 @@ isEmptyValue	Godeps/_workspace/src/github.com/ugorji/go/codec/helper_internal.go
 isImmutableKind	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func isImmutableKind(k reflect.Kind) (v bool) {$/;"	f
 isMerge	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func isMerge(n *node) bool {$/;"	f
 isNaN	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func isNaN(f float64) bool { return f != f }$/;"	f
+isTerminal	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	baseTimestamp time.Time$/;"	v
 isZero	Godeps/_workspace/src/gopkg.in/yaml.v2/yaml.go	/^func isZero(v reflect.Value) bool {$/;"	f
 is_alpha	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlprivateh.go	/^func is_alpha(b []byte, i int) bool {$/;"	f
 is_ascii	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlprivateh.go	/^func is_ascii(b []byte, i int) bool {$/;"	f
@@ -2880,14 +3057,39 @@ kUint32	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (f *de
 kUint64	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (f *decFnInfo) kUint64(rv reflect.Value) {$/;"	f
 kUint8	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (f *decFnInfo) kUint8(rv reflect.Value) {$/;"	f
 kUintptr	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (f *decFnInfo) kUintptr(rv reflect.Value) {$/;"	f
+kernel32	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_windows.go	/^var kernel32 = syscall.NewLazyDLL("kernel32.dll")$/;"	v
 keyFloat	Godeps/_workspace/src/gopkg.in/yaml.v2/sorter.go	/^func keyFloat(v reflect.Value) (f float64, ok bool) {$/;"	f
 keyList	Godeps/_workspace/src/gopkg.in/yaml.v2/sorter.go	/^type keyList []reflect.Value$/;"	t
 line	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x *genRunner) line(s string) {$/;"	f
 linef	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x *genRunner) linef(s string, params ...interface{}) {$/;"	f
+log	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry Entry) log(level Level, msg string) {$/;"	f
+log	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/basic/basic.go	/^var log = logrus.New()$/;"	v
+log	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/hook/hook.go	/^var log = logrus.New()$/;"	v
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/doc.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatter.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/json_formatter.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/logger.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/logrus.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_bsd.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_linux.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_notwindows.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_solaris.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_windows.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^package logrus$/;"	p
+logrus	Godeps/_workspace/src/github.com/Sirupsen/logrus/writer.go	/^package logrus$/;"	p
+logrus_syslog	Godeps/_workspace/src/github.com/Sirupsen/logrus/hooks/syslog/syslog.go	/^package logrus_syslog$/;"	p
+logstash	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatters/logstash/logstash.go	/^package logstash$/;"	p
 longTag	Godeps/_workspace/src/gopkg.in/yaml.v2/resolve.go	/^func longTag(tag string) string {$/;"	f
 longTagPrefix	Godeps/_workspace/src/gopkg.in/yaml.v2/resolve.go	/^const longTagPrefix = "tag:yaml.org,2002:"$/;"	c
 lookupSRV	Godeps/_workspace/src/github.com/coreos/etcd/client/srv.go	/^var ($/;"	v
 m	Godeps/_workspace/src/github.com/ugorji/go/codec/noop.go	/^func (h *noopDrv) m(v int) int { h.i++; return h.i % v }$/;"	f
+main	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/basic/basic.go	/^func main() {$/;"	f
+main	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/basic/basic.go	/^package main$/;"	p
+main	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/hook/hook.go	/^func main() {$/;"	f
+main	Godeps/_workspace/src/github.com/Sirupsen/logrus/examples/hook/hook.go	/^package main$/;"	p
 main	Godeps/_workspace/src/github.com/samalba/dockerclient/examples/events.go	/^func main() {$/;"	f
 main	Godeps/_workspace/src/github.com/samalba/dockerclient/examples/events.go	/^package main$/;"	p
 main	Godeps/_workspace/src/github.com/samalba/dockerclient/examples/stats/stats.go	/^func main() {$/;"	f
@@ -2931,6 +3133,7 @@ membersAPIActionUpdate	Godeps/_workspace/src/github.com/coreos/etcd/client/membe
 membersError	Godeps/_workspace/src/github.com/coreos/etcd/client/members.go	/^type membersError struct {$/;"	t
 merge	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (d *decoder) merge(n *node, out reflect.Value) {$/;"	f
 methodMatcher	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^type methodMatcher []string$/;"	t
+miniTS	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func miniTS() int {$/;"	f
 mockclient	Godeps/_workspace/src/github.com/samalba/dockerclient/mockclient/mock.go	/^package mockclient$/;"	p
 modRole	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_role.go	/^func (r *httpAuthRoleAPI) modRole(ctx context.Context, req *authRoleAPIAction) (*Role, error) {$/;"	f
 modUser	Godeps/_workspace/src/github.com/coreos/etcd/client/auth_user.go	/^func (u *httpAuthUserAPI) modUser(ctx context.Context, req *authUserAPIAction) (*User, error) {$/;"	f
@@ -2993,6 +3196,7 @@ mux	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^package mux$/;"	p
 mux	Godeps/_workspace/src/github.com/gorilla/mux/regexp.go	/^package mux$/;"	p
 mux	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^package mux$/;"	p
 myStopRpcServer	Godeps/_workspace/src/github.com/ugorji/go/codec/test.py	/^        def myStopRpcServer():$/;"	m	class:doRpcServer.EchoHandler
+needsQuoting	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func needsQuoting(text string) bool {$/;"	f
 newCancelCtx	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func newCancelCtx(parent Context) cancelCtx {$/;"	f
 newDecDriver	Godeps/_workspace/src/github.com/ugorji/go/codec/binc.go	/^func (h *BincHandle) newDecDriver(d *Decoder) decDriver {$/;"	f
 newDecDriver	Godeps/_workspace/src/github.com/ugorji/go/codec/cbor.go	/^func (h *CborHandle) newDecDriver(d *Decoder) decDriver {$/;"	f
@@ -3023,6 +3227,7 @@ nilv	Godeps/_workspace/src/gopkg.in/yaml.v2/encode.go	/^func (e *encoder) nilv()
 noBuiltInTypes	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type noBuiltInTypes struct{}$/;"	t
 noFieldNameToStructFieldInfoErr	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^	chkOvf checkOverflow$/;"	v
 noStreamingCodec	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type noStreamingCodec struct{}$/;"	t
+nocolor	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^const ($/;"	c
 node	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (p *parser) node(kind int) *node {$/;"	f
 node	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^type node struct {$/;"	t
 noopDrv	Godeps/_workspace/src/github.com/ugorji/go/codec/noop.go	/^type noopDrv struct {$/;"	t
@@ -3044,16 +3249,19 @@ parentRoute	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^type parentR
 parse	Godeps/_workspace/src/github.com/coreos/etcd/pkg/types/urlsmap.go	/^func parse(s string) map[string][]string {$/;"	f
 parse	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (p *parser) parse() *node {$/;"	f
 parseCustomHeader	Godeps/_workspace/src/github.com/ugorji/go/codec/msgpack.go	/^func (c *msgpackSpecRpcCodec) parseCustomHeader(expectTypeByte byte, msgid *uint64, methodOrError *string) (err error) {$/;"	f
-parseSize	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^func parseSize(sizeStr string, uMap unitMap) (int64, error) {$/;"	f
+parseSize	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^func parseSize(sizeStr string, uMap unitMap) (int64, error) {$/;"	f
 parseStructFieldInfo	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func parseStructFieldInfo(fname string, stag string) *structFieldInfo {$/;"	f
 parser	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^type parser struct {$/;"	t
 pathutil	Godeps/_workspace/src/github.com/coreos/etcd/pkg/pathutil/path.go	/^package pathutil$/;"	p
 peek_token	Godeps/_workspace/src/gopkg.in/yaml.v2/parserc.go	/^func peek_token(parser *yaml_parser_t) *yaml_token_t {$/;"	f
 preDecodeValue	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) preDecodeValue(rv reflect.Value, tryNil bool) (rv2 reflect.Value, proceed bool) {$/;"	f
 preEncodeValue	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (e *Encoder) preEncodeValue(rv reflect.Value) (rv2 reflect.Value, sptr uintptr, proceed bool) {$/;"	f
+prefixFieldClashes	Godeps/_workspace/src/github.com/Sirupsen/logrus/formatter.go	/^func prefixFieldClashes(data Fields) {$/;"	f
 prepare	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (d *decoder) prepare(n *node, out reflect.Value) (newout reflect.Value, unmarshaled, good bool) {$/;"	f
 prepareVars	Godeps/_workspace/src/github.com/gorilla/mux/route.go	/^func (r *Route) prepareVars(pairs ...string) (map[string]string, error) {$/;"	f
+printColored	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^func (f *TextFormatter) printColored(b *bytes.Buffer, entry *Entry, keys []string, timestampFormat string) {$/;"	f
 printcURL	Godeps/_workspace/src/github.com/coreos/etcd/client/curl.go	/^func printcURL(req *http.Request) error {$/;"	f
+procGetConsoleMode	Godeps/_workspace/src/github.com/Sirupsen/logrus/terminal_windows.go	/^var ($/;"	v
 propagateCancel	Godeps/_workspace/src/golang.org/x/net/context/context.go	/^func propagateCancel(parent Context, child canceler) {$/;"	f
 pruneSignExt	Godeps/_workspace/src/github.com/ugorji/go/codec/helper_internal.go	/^func pruneSignExt(v []byte, pos bool) (n int) {$/;"	f
 put	Godeps/_workspace/src/gopkg.in/yaml.v2/emitterc.go	/^func put(emitter *yaml_emitter_t, value byte) bool {$/;"	f
@@ -3084,6 +3292,7 @@ readn1eof	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (z *
 readx	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (z *bytesDecReader) readx(n int) (bs []byte) {$/;"	f
 readx	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (z *ioDecReader) readx(n int) (bs []byte) {$/;"	f
 recoverPanicToErr	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^	useMapForCodecCache = false$/;"	c
+red	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	nocolor = 0$/;"	c
 redirectFollowingHTTPClient	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type redirectFollowingHTTPClient struct {$/;"	t
 redirectedHTTPAction	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type redirectedHTTPAction struct {$/;"	t
 registerXtraT	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x *genRunner) registerXtraT(t reflect.Type) {$/;"	f
@@ -3115,10 +3324,27 @@ resolve	Godeps/_workspace/src/gopkg.in/yaml.v2/resolve.go	/^func resolve(tag str
 resolveMap	Godeps/_workspace/src/gopkg.in/yaml.v2/resolve.go	/^var resolveMap = make(map[string]resolveMapItem)$/;"	v
 resolveMapItem	Godeps/_workspace/src/gopkg.in/yaml.v2/resolve.go	/^type resolveMapItem struct {$/;"	t
 resolveTable	Godeps/_workspace/src/gopkg.in/yaml.v2/resolve.go	/^var resolveTable = make([]byte, 256)$/;"	v
+restartService	api/handlers.go	/^func restartService(w http.ResponseWriter, r *http.Request) {$/;"	f
 rget	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^func (x *TypeInfos) rget(rt reflect.Type, rtid uintptr,$/;"	f
 rgetPool	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^var rgetPool = sync.Pool{$/;"	v
 rgetPoolT	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type rgetPoolT struct {$/;"	t
 rgetT	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type rgetT struct {$/;"	t
+rlimitAs	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^const ($/;"	c
+rlimitCPU	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitCore       = 4$/;"	c
+rlimitCore	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitAs         = 9$/;"	c
+rlimitData	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitCPU        = 0$/;"	c
+rlimitFsize	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitData       = 2$/;"	c
+rlimitLocks	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitFsize      = 1$/;"	c
+rlimitMemlock	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitLocks      = 10$/;"	c
+rlimitMsgqueue	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitMemlock    = 8$/;"	c
+rlimitNice	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitMsgqueue   = 12$/;"	c
+rlimitNofile	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitNice       = 13$/;"	c
+rlimitNproc	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitNofile     = 7$/;"	c
+rlimitRss	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitNproc      = 6$/;"	c
+rlimitRtprio	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitRss        = 5$/;"	c
+rlimitRttime	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitRtprio     = 14$/;"	c
+rlimitSigpending	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitRttime     = 15$/;"	c
+rlimitStack	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^	rlimitSigpending = 11$/;"	c
 roundTripResponse	Godeps/_workspace/src/github.com/coreos/etcd/client/client.go	/^type roundTripResponse struct {$/;"	t
 routeKey	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^	varsKey contextKey = iota$/;"	c
 routeRegexp	Godeps/_workspace/src/github.com/gorilla/mux/regexp.go	/^type routeRegexp struct {$/;"	t
@@ -3149,7 +3375,7 @@ sequence	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (p *parser) seq
 sequenceNode	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^	mappingNode$/;"	c
 sequence_style	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlh.go	/^func (e *yaml_event_t) sequence_style() yaml_sequence_style_t { return yaml_sequence_style_t(e.style) }$/;"	f
 service	service/service.go	/^package service$/;"	p
-serviceInfo	cli/manage.go	/^type serviceInfo struct {$/;"	t
+servicesWatcher	cli/manage.go	/^func servicesWatcher(etcdPath string) error {$/;"	f
 set	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type set []uintptr$/;"	t
 setAction	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^type setAction struct {$/;"	t
 setCurrentRoute	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func setCurrentRoute(r *http.Request, val interface{}) {$/;"	f
@@ -3177,15 +3403,19 @@ simpleVdNil	Godeps/_workspace/src/github.com/ugorji/go/codec/simple.go	/^	_     
 simpleVdPosInt	Godeps/_workspace/src/github.com/ugorji/go/codec/simple.go	/^	simpleVdFloat64       = 5$/;"	c
 simpleVdString	Godeps/_workspace/src/github.com/ugorji/go/codec/simple.go	/^	simpleVdNegInt = 12$/;"	c
 simpleVdTrue	Godeps/_workspace/src/github.com/ugorji/go/codec/simple.go	/^	simpleVdFalse         = 2$/;"	c
-sizeRegex	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^	binaryMap  = unitMap{"k": KiB, "m": MiB, "g": GiB, "t": TiB, "p": PiB}$/;"	v
+sizeRegex	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^	binaryMap  = unitMap{"k": KiB, "m": MiB, "g": GiB, "t": TiB, "p": PiB}$/;"	v
 skip	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (p *parser) skip() {$/;"	f
 skip	Godeps/_workspace/src/gopkg.in/yaml.v2/scannerc.go	/^func skip(parser *yaml_parser_t) {$/;"	f
 skip_line	Godeps/_workspace/src/gopkg.in/yaml.v2/scannerc.go	/^func skip_line(parser *yaml_parser_t) {$/;"	f
 skip_token	Godeps/_workspace/src/gopkg.in/yaml.v2/parserc.go	/^func skip_token(parser *yaml_parser_t) {$/;"	f
 slicev	Godeps/_workspace/src/gopkg.in/yaml.v2/encode.go	/^func (e *encoder) slicev(tag string, in reflect.Value) {$/;"	f
+sprintlnn	Godeps/_workspace/src/github.com/Sirupsen/logrus/entry.go	/^func (entry *Entry) sprintlnn(args ...interface{}) string {$/;"	f
 srvDiscover	Godeps/_workspace/src/github.com/coreos/etcd/client/srv.go	/^type srvDiscover struct{}$/;"	t
 start	Godeps/_workspace/src/github.com/ugorji/go/codec/noop.go	/^func (h *noopDrv) start(b bool) {$/;"	f
+startService	api/handlers.go	/^func startService(w http.ResponseWriter, r *http.Request) {$/;"	f
 statCallback	Godeps/_workspace/src/github.com/samalba/dockerclient/examples/stats/stats.go	/^func statCallback(id string, stat *dockerclient.Stats, ec chan error, args ...interface{}) {$/;"	f
+std	Godeps/_workspace/src/github.com/Sirupsen/logrus/exported.go	/^var ($/;"	v
+stopService	api/handlers.go	/^func stopService(w http.ResponseWriter, r *http.Request) {$/;"	f
 stopTrack	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (z *bytesDecReader) stopTrack() (bs []byte) {$/;"	f
 stopTrack	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (z *ioDecReader) stopTrack() (bs []byte) {$/;"	f
 string	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) string(v []byte) (s string) {$/;"	f
@@ -3208,8 +3438,6 @@ supportMarshalInterfaces	Godeps/_workspace/src/github.com/ugorji/go/codec/helper
 swallow	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) swallow() {$/;"	f
 swallowViaHammer	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (d *Decoder) swallowViaHammer() {$/;"	f
 swarmclient	swarmclient/swarmclient.go	/^package swarmclient$/;"	p
-swarmhost	swarmclient/swarmclient.go	/^var swarmhost = "http:\/\/127.0.0.1"$/;"	v
-swarmport	swarmclient/swarmclient.go	/^var swarmport = ":2375"$/;"	v
 t	Godeps/_workspace/src/github.com/ugorji/go/codec/test.py	/^        t = threading.Timer(stopTimeSec, myStopRpcServer)$/;"	v	class:doRpcServer.EchoHandler
 terror	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (d *decoder) terror(n *node, tag string, out reflect.Value) {$/;"	f
 textEncodingType	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type textEncodingType struct{}$/;"	t
@@ -3246,13 +3474,15 @@ uintRv	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type uintRv 
 uintRvSlice	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type uintRvSlice []uintRv$/;"	t
 uintSlice	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^type uintSlice []uint64$/;"	t
 uintv	Godeps/_workspace/src/gopkg.in/yaml.v2/encode.go	/^func (e *encoder) uintv(tag string, in reflect.Value) {$/;"	f
+ulimitNameMapping	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^var ulimitNameMapping = map[string]int{$/;"	v
 uncacheRead	Godeps/_workspace/src/github.com/ugorji/go/codec/decode.go	/^func (_ decNoSeparator) uncacheRead() {}$/;"	f
 uncacheRead	Godeps/_workspace/src/github.com/ugorji/go/codec/json.go	/^func (d *jsonDecDriver) uncacheRead() {$/;"	f
 uncacheRead	Godeps/_workspace/src/github.com/ugorji/go/codec/noop.go	/^func (h *noopDrv) uncacheRead() {}$/;"	f
 uniqueVars	Godeps/_workspace/src/github.com/gorilla/mux/mux.go	/^func uniqueVars(s1, s2 []string) error {$/;"	f
-unitMap	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^type unitMap map[string]int64$/;"	t
-units	Godeps/_workspace/src/github.com/docker/docker/pkg/units/duration.go	/^package units$/;"	p
-units	Godeps/_workspace/src/github.com/docker/docker/pkg/units/size.go	/^package units$/;"	p
+unitMap	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^type unitMap map[string]int64$/;"	t
+units	Godeps/_workspace/src/github.com/docker/go-units/duration.go	/^package units$/;"	p
+units	Godeps/_workspace/src/github.com/docker/go-units/size.go	/^package units$/;"	p
+units	Godeps/_workspace/src/github.com/docker/go-units/ulimit.go	/^package units$/;"	p
 unmarshal	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^func (d *decoder) unmarshal(n *node, out reflect.Value) (good bool) {$/;"	f
 unmarshalFailedKeysResponse	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func unmarshalFailedKeysResponse(body []byte) error {$/;"	f
 unmarshalHTTPResponse	Godeps/_workspace/src/github.com/coreos/etcd/client/keys.go	/^func unmarshalHTTPResponse(code int, header http.Header, body []byte) (res *Response, err error) {$/;"	f
@@ -3305,6 +3535,8 @@ writen1	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (z *by
 writen1	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (z *ioEncWriter) writen1(b byte) {$/;"	f
 writen2	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (z *bytesEncWriter) writen2(b1 byte, b2 byte) {$/;"	f
 writen2	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (z *ioEncWriter) writen2(b1 byte, b2 byte) {$/;"	f
+writerFinalizer	Godeps/_workspace/src/github.com/Sirupsen/logrus/writer.go	/^func writerFinalizer(writer *io.PipeWriter) {$/;"	f
+writerScanner	Godeps/_workspace/src/github.com/Sirupsen/logrus/writer.go	/^func (logger *Logger) writerScanner(reader *io.PipeReader) {$/;"	f
 writestr	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (z *bytesEncWriter) writestr(s string) {$/;"	f
 writestr	Godeps/_workspace/src/github.com/ugorji/go/codec/encode.go	/^func (z *ioEncWriter) writestr(s string) {$/;"	f
 xtraSM	Godeps/_workspace/src/github.com/ugorji/go/codec/gen.go	/^func (x *genRunner) xtraSM(varname string, encode bool, t reflect.Type) {$/;"	f
@@ -3616,5 +3848,6 @@ yaml_token_t	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlh.go	/^type yaml_token_t
 yaml_token_type_t	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlh.go	/^type yaml_token_type_t int$/;"	t
 yaml_version_directive_t	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlh.go	/^type yaml_version_directive_t struct {$/;"	t
 yaml_write_handler_t	Godeps/_workspace/src/gopkg.in/yaml.v2/yamlh.go	/^type yaml_write_handler_t func(emitter *yaml_emitter_t, buffer []byte) error$/;"	t
+yellow	Godeps/_workspace/src/github.com/Sirupsen/logrus/text_formatter.go	/^	green   = 32$/;"	c
 zeroByteSlice	Godeps/_workspace/src/github.com/ugorji/go/codec/helper.go	/^	oneByteArr    = [1]byte{0}$/;"	v
 zeroValue	Godeps/_workspace/src/gopkg.in/yaml.v2/decode.go	/^var zeroValue reflect.Value$/;"	v
