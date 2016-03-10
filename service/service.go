@@ -9,47 +9,6 @@ import (
 	"strconv"
 )
 
-type ServiceInfo struct {
-	Service    Service
-	Status     int
-	Containers []dockerclient.ContainerInfo
-}
-
-var ServicesInfo []ServiceInfo
-
-type Service struct {
-	ContainersIds []string
-	ServiceConfig ServiceConfig
-}
-
-type ServiceConfig struct {
-	Kind     string          `kind`
-	Metadata ServiceMetadata `metadata`
-	Spec     ServiceSpec     `spec`
-}
-
-type ServiceMetadata struct {
-	Name   string            `name`
-	Labels map[string]string `labels`
-}
-
-type ServiceSpec struct {
-	Ports     []int     `ports`
-	Replicas  int       `replicas`
-	Image     string    `image`
-	Resources Resources `resources` //****
-	Ips       []string  `ips`
-	Cmd       []string  `cmd`
-	Selector  []string  `selector`
-}
-
-type Resources struct {
-	Memory     int64  `memory`
-	MemorySwap int64  `memory-swap`
-	CpuShares  int64  `cpu-shares`
-	CpusetCpus string `cpuset-cpus`
-}
-
 func UnmarshalYaml(in []byte) (*ServiceConfig, error) {
 	config := new(ServiceConfig)
 	err := yaml.Unmarshal(in, &config)
@@ -95,6 +54,13 @@ func CreateService(config *ServiceConfig) ([]string, error) {
 	hostConfig.CpusetCpus = config.Spec.Resources.CpusetCpus
 	hostConfig.Memory = config.Spec.Resources.Memory
 	hostConfig.MemorySwap = config.Spec.Resources.MemorySwap
+
+	cpuQuota, err := strconv.Atoi(config.Spec.Resources.CpuQuota)
+	if err != nil {
+		hostConfig.CpuQuota = 0
+	} else {
+		hostConfig.CpuQuota = int64(cpuQuota)
+	}
 
 	// replicas
 	numOfTimes := 0

@@ -100,3 +100,17 @@
 [31mFATA[0m[0001] service.CreateService():500 Internal Server Error: Error: image zhuqifei/tomcat: not found
 
  
+time="2016-03-02T16:13:02+08:00" level=info msg="********************|START TYCOON|********************" 
+time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log" 
+time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Log Level : debug" 
+time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377" 
+time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370" 
+time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379" 
+time="2016-03-02T16:13:02+08:00" level=info msg="main.main():Start Tycoon Main" 
+time="2016-03-07T15:16:41+08:00" level=info msg="********************|START TYCOON|********************" 
+time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log" 
+time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Log Level : debug" 
+time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377" 
+time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370" 
+time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379" 
+time="2016-03-07T15:16:41+08:00" level=info msg="main.main():Start Tycoon Main" 
