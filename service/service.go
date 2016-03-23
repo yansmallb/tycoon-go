@@ -48,7 +48,12 @@ func CreateService(config *ServiceConfig) ([]string, error) {
 	}
 
 	// intit hostconfig. use host, create and start containers
-	hostConfig := &dockerclient.HostConfig{NetworkMode: "host"}
+	hostConfig := &dockerclient.HostConfig{}
+	if config.Spec.Resources.NetworkMode != "" {
+		hostConfig.NetworkMode = config.Spec.Resources.NetworkMode
+	} else {
+		hostConfig.NetworkMode = "host"
+	}
 	// use to filter Resources
 	hostConfig.CpuShares = config.Spec.Resources.CpuShares
 	hostConfig.CpusetCpus = config.Spec.Resources.CpusetCpus
@@ -106,14 +111,16 @@ func CreateService(config *ServiceConfig) ([]string, error) {
 			fmt.Printf("[error]service.CreateService():%+v\n", err)
 		}
 
-		//start container
-		swarm.StartContainer(containerId, hostConfig)
-		if err != nil {
-			log.Fatalf("service.CreateService():%s\n", err)
-			fmt.Printf("[error]service.CreateService():%+v\n", err)
-			return nil, err
-		}
 		containerIds = append(containerIds, containerId)
+		if config.Metadata.Labels["type"] != "libvirt" {
+			//docker start container,libvirt do not need to start
+			swarm.StartContainer(containerId, hostConfig)
+			if err != nil {
+				log.Fatalf("service.CreateService():%s\n", err)
+				fmt.Printf("[error]service.CreateService():%+v\n", err)
+				return nil, err
+			}
+		}
 	}
 	return containerIds, err
 }
@@ -125,15 +132,17 @@ func DeleteService(s *Service) error {
 	}
 	log.Debugf("service.DeleteService():containerIds:%v\n", s.ContainersIds)
 	for index := range s.ContainersIds {
-		err := swarm.StopContainer(s.ContainersIds[index], 0)
-		if err != nil {
-			log.Errorf("service.DeleteService()::%v\n", err)
-			fmt.Printf("[error]service.CreateService():%+v\n", err)
+		if s.ServiceConfig.Metadata.Labels["type"] != "libvirt" {
+			err := swarm.StopContainer(s.ContainersIds[index], 0)
+			if err != nil {
+				log.Errorf("service.DeleteService()::%v\n", err)
+				fmt.Printf("[error]service.DeleteService():%+v\n", err)
+			}
 		}
 		err = swarm.RemoveContainer(s.ContainersIds[index], true, false)
 		if err != nil {
 			log.Errorf("service.DeleteService()::%v\n", err)
-			fmt.Printf("[error]service.CreateService():%+v\n", err)
+			fmt.Printf("[error]service.DeleteService():%+v\n", err)
 		}
 	}
 	return nil

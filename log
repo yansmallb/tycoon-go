@@ -2,115 +2,21 @@
 [34mINFO[0m[0000] main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log 
 [34mINFO[0m[0000] main.UnmarshalConfig():Log Level : debug     
 [34mINFO[0m[0000] main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377 
-[34mINFO[0m[0000] main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370 
-[34mINFO[0m[0000] main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379 
+[34mINFO[0m[0000] main.UnmarshalConfig():Swarm Host : http://192.168.11.59:2375 
+[34mINFO[0m[0000] main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379 
 [34mINFO[0m[0000] main.main():Start Tycoon Main                
-[37mDEBU[0m[0000] cli.Run(): cli args:[./tycoon-go create ./test/tomcat.yaml http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379]
+[37mDEBU[0m[0000] cli.Run(): cli args:[./tycoon-go create ./test/centos_virt.yaml http://192.168.11.59:2379]
  
 [34mINFO[0m[0000] cli.create():Start Create                    
-[37mDEBU[0m[0000] cli.create():ConfigFile Path:./test/tomcat.yaml 
-[37mDEBU[0m[0000] cli.create():yaml config:&{Kind:service Metadata:{Name:tomcat-tycoon21 Labels:map[app:tomcat role:master]} Spec:{Ports:[] Replicas:2 Image:192.168.11.57:5000/zhuqifei/tomcat Resources:{Memory:0 MemorySwap:0 CpuShares:0 CpusetCpus:} Ips:[192.168.11.57 192.168.11.58 192.168.11.59] Cmd:[] Selector:[constraint:hostname!=node6]}}
+[37mDEBU[0m[0000] cli.create():ConfigFile Path:./test/centos_virt.yaml 
+[37mDEBU[0m[0000] cli.create():yaml config:&{Kind:service Metadata:{Name:centos-libvirt Labels:map[type:libvirt app:centos role:master]} Spec:{Ports:[] Replicas:1 Image:/var/lib/libvirt/images/centos_65.qcow2 Resources:{Memory:100000 MemorySwap:0 CpuShares:2 CpusetCpus: CpuQuota:2 NetworkMode:virbr0} Ips:[] Cmd:[hd] Selector:[hd]}}
  
-[37mDEBU[0m[0000] service.CreateService():containerName:tomcat-tycoon21_master0 ; containerConfig:&{Hostname: Domainname: User: AttachStdin:false AttachStdout:false AttachStderr:false ExposedPorts:map[] Tty:false OpenStdin:false StdinOnce:false Env:[constraint:hostname!=node6] Cmd:[] Image:192.168.11.57:5000/zhuqifei/tomcat Volumes:map[] WorkingDir: Entrypoint:[] NetworkDisabled:false MacAddress: OnBuild:[] Labels:map[app:tomcat role:master] StopSignal: VolumeDriver: Memory:0 MemorySwap:0 CpuShares:0 Cpuset: PortSpecs:[] HostConfig:{Binds:[] ContainerIDFile: LxcConf:[] Memory:0 MemoryReservation:0 MemorySwap:0 KernelMemory:0 CpuShares:0 CpuPeriod:0 CpusetCpus: CpusetMems: CpuQuota:0 BlkioWeight:0 OomKillDisable:false MemorySwappiness:0 Privileged:false PortBindings:map[] Links:[] PublishAllPorts:false Dns:[] DNSOptions:[] DnsSearch:[] ExtraHosts:[] VolumesFrom:[] Devices:[] NetworkMode:host IpcMode: PidMode: UTSMode: CapAdd:[] CapDrop:[] GroupAdd:[] RestartPolicy:{Name: MaximumRetryCount:0} SecurityOpt:[] ReadonlyRootfs:false Ulimits:[] LogConfig:{Type: Config:map[]} CgroupParent: ConsoleSize:[0 0] VolumeDriver:}}
+[37mDEBU[0m[0000] service.CreateService():containerName:centos-libvirt_master0 ; containerConfig:&{Hostname: Domainname: User: AttachStdin:false AttachStdout:false AttachStderr:false ExposedPorts:map[] Tty:false OpenStdin:false StdinOnce:false Env:[hd] Cmd:[hd] Image:/var/lib/libvirt/images/centos_65.qcow2 Volumes:map[] WorkingDir: Entrypoint:[] NetworkDisabled:false MacAddress: OnBuild:[] Labels:map[app:centos role:master type:libvirt] StopSignal: VolumeDriver: Memory:0 MemorySwap:0 CpuShares:0 Cpuset: PortSpecs:[] HostConfig:{Binds:[] ContainerIDFile: LxcConf:[] Memory:100000 MemoryReservation:0 MemorySwap:0 KernelMemory:0 CpuShares:2 CpuPeriod:0 CpusetCpus: CpusetMems: CpuQuota:2 BlkioWeight:0 OomKillDisable:false MemorySwappiness:0 Privileged:false PortBindings:map[] Links:[] PublishAllPorts:false Dns:[] DNSOptions:[] DnsSearch:[] ExtraHosts:[] VolumesFrom:[] Devices:[] NetworkMode:virbr0 IpcMode: PidMode: UTSMode: CapAdd:[] CapDrop:[] GroupAdd:[] RestartPolicy:{Name: MaximumRetryCount:0} SecurityOpt:[] ReadonlyRootfs:false Ulimits:[] LogConfig:{Type: Config:map[]} CgroupParent: ConsoleSize:[0 0] VolumeDriver:}}
  
-[37mDEBU[0m[0000] service.CreateService():containerId:
-        
-[31mFATA[0m[0000] service.CreateService():500 Internal Server Error: 500 Internal Server Error: image ID '' is invalid
-
-
- 
-[34mINFO[0m[0000] ********************|START TYCOON|******************** 
-[34mINFO[0m[0000] main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log 
-[34mINFO[0m[0000] main.UnmarshalConfig():Log Level : debug     
-[34mINFO[0m[0000] main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377 
-[34mINFO[0m[0000] main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370 
-[34mINFO[0m[0000] main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379 
-[34mINFO[0m[0000] main.main():Start Tycoon Main                
-[37mDEBU[0m[0000] cli.Run(): cli args:[./tycoon-go create ./test/tomcat.yaml http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379]
- 
-[34mINFO[0m[0000] cli.create():Start Create                    
-[37mDEBU[0m[0000] cli.create():ConfigFile Path:./test/tomcat.yaml 
-[37mDEBU[0m[0000] cli.create():yaml config:&{Kind:service Metadata:{Name:tomcat-tycoon21 Labels:map[app:tomcat role:master]} Spec:{Ports:[] Replicas:2 Image:192.168.11.57:5000/zhuqifei/tomcat Resources:{Memory:0 MemorySwap:0 CpuShares:0 CpusetCpus:} Ips:[192.168.11.57 192.168.11.58 192.168.11.59] Cmd:[] Selector:[constraint:hostname!=node6]}}
- 
-[37mDEBU[0m[0000] service.CreateService():containerName:tomcat-tycoon21_master0 ; containerConfig:&{Hostname: Domainname: User: AttachStdin:false AttachStdout:false AttachStderr:false ExposedPorts:map[] Tty:false OpenStdin:false StdinOnce:false Env:[constraint:hostname!=node6] Cmd:[] Image:192.168.11.57:5000/zhuqifei/tomcat Volumes:map[] WorkingDir: Entrypoint:[] NetworkDisabled:false MacAddress: OnBuild:[] Labels:map[role:master app:tomcat] StopSignal: VolumeDriver: Memory:0 MemorySwap:0 CpuShares:0 Cpuset: PortSpecs:[] HostConfig:{Binds:[] ContainerIDFile: LxcConf:[] Memory:0 MemoryReservation:0 MemorySwap:0 KernelMemory:0 CpuShares:0 CpuPeriod:0 CpusetCpus: CpusetMems: CpuQuota:0 BlkioWeight:0 OomKillDisable:false MemorySwappiness:0 Privileged:false PortBindings:map[] Links:[] PublishAllPorts:false Dns:[] DNSOptions:[] DnsSearch:[] ExtraHosts:[] VolumesFrom:[] Devices:[] NetworkMode:host IpcMode: PidMode: UTSMode: CapAdd:[] CapDrop:[] GroupAdd:[] RestartPolicy:{Name: MaximumRetryCount:0} SecurityOpt:[] ReadonlyRootfs:false Ulimits:[] LogConfig:{Type: Config:map[]} CgroupParent: ConsoleSize:[0 0] VolumeDriver:}}
- 
-[37mDEBU[0m[0000] service.CreateService():containerId:
-        
-[31mFATA[0m[0000] service.CreateService():500 Internal Server Error: 500 Internal Server Error: image ID '' is invalid
-
-
- 
-[34mINFO[0m[0000] ********************|START TYCOON|******************** 
-[34mINFO[0m[0000] main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log 
-[34mINFO[0m[0000] main.UnmarshalConfig():Log Level : debug     
-[34mINFO[0m[0000] main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377 
-[34mINFO[0m[0000] main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370 
-[34mINFO[0m[0000] main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379 
-[34mINFO[0m[0000] main.main():Start Tycoon Main                
-[37mDEBU[0m[0000] cli.Run(): cli args:[./tycoon-go create ./test/tomcat.yaml http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379]
- 
-[34mINFO[0m[0000] cli.create():Start Create                    
-[37mDEBU[0m[0000] cli.create():ConfigFile Path:./test/tomcat.yaml 
-[37mDEBU[0m[0000] cli.create():yaml config:&{Kind:service Metadata:{Name:tomcat-tycoon21 Labels:map[app:tomcat role:master]} Spec:{Ports:[] Replicas:2 Image:192.168.11.57:5000/zhuqifei/tomcat Resources:{Memory:0 MemorySwap:0 CpuShares:0 CpusetCpus:} Ips:[192.168.11.57 192.168.11.58 192.168.11.59] Cmd:[] Selector:[constraint:hostname!=node6]}}
- 
-[37mDEBU[0m[0000] service.CreateService():containerName:tomcat-tycoon21_master0 ; containerConfig:&{Hostname: Domainname: User: AttachStdin:false AttachStdout:false AttachStderr:false ExposedPorts:map[] Tty:false OpenStdin:false StdinOnce:false Env:[constraint:hostname!=node6] Cmd:[] Image:192.168.11.57:5000/zhuqifei/tomcat Volumes:map[] WorkingDir: Entrypoint:[] NetworkDisabled:false MacAddress: OnBuild:[] Labels:map[role:master app:tomcat] StopSignal: VolumeDriver: Memory:0 MemorySwap:0 CpuShares:0 Cpuset: PortSpecs:[] HostConfig:{Binds:[] ContainerIDFile: LxcConf:[] Memory:0 MemoryReservation:0 MemorySwap:0 KernelMemory:0 CpuShares:0 CpuPeriod:0 CpusetCpus: CpusetMems: CpuQuota:0 BlkioWeight:0 OomKillDisable:false MemorySwappiness:0 Privileged:false PortBindings:map[] Links:[] PublishAllPorts:false Dns:[] DNSOptions:[] DnsSearch:[] ExtraHosts:[] VolumesFrom:[] Devices:[] NetworkMode:host IpcMode: PidMode: UTSMode: CapAdd:[] CapDrop:[] GroupAdd:[] RestartPolicy:{Name: MaximumRetryCount:0} SecurityOpt:[] ReadonlyRootfs:false Ulimits:[] LogConfig:{Type: Config:map[]} CgroupParent: ConsoleSize:[0 0] VolumeDriver:}}
- 
-[37mDEBU[0m[0001] service.CreateService():containerId:
-        
-[31mFATA[0m[0001] service.CreateService():500 Internal Server Error: Error: image zhuqifei/tomcat: not found
-
- 
-[34mINFO[0m[0000] ********************|START TYCOON|******************** 
-[34mINFO[0m[0000] main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log 
-[34mINFO[0m[0000] main.UnmarshalConfig():Log Level : debug     
-[34mINFO[0m[0000] main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377 
-[34mINFO[0m[0000] main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370 
-[34mINFO[0m[0000] main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379 
-[34mINFO[0m[0000] main.main():Start Tycoon Main                
-[37mDEBU[0m[0000] cli.Run(): cli args:[./tycoon-go create ./test/tomcat.yaml http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379]
- 
-[34mINFO[0m[0000] cli.create():Start Create                    
-[37mDEBU[0m[0000] cli.create():ConfigFile Path:./test/tomcat.yaml 
-[37mDEBU[0m[0000] cli.create():yaml config:&{Kind:service Metadata:{Name:tomcat-tycoon21 Labels:map[app:tomcat role:master]} Spec:{Ports:[] Replicas:2 Image:192.168.11.57:5000/zhuqifei/tomcat Resources:{Memory:0 MemorySwap:0 CpuShares:0 CpusetCpus:} Ips:[192.168.11.57 192.168.11.58 192.168.11.59] Cmd:[] Selector:[constraint:hostname!=node6]}}
- 
-[37mDEBU[0m[0000] service.CreateService():containerName:tomcat-tycoon21_master0 ; containerConfig:&{Hostname: Domainname: User: AttachStdin:false AttachStdout:false AttachStderr:false ExposedPorts:map[] Tty:false OpenStdin:false StdinOnce:false Env:[constraint:hostname!=node6] Cmd:[] Image:192.168.11.57:5000/zhuqifei/tomcat Volumes:map[] WorkingDir: Entrypoint:[] NetworkDisabled:false MacAddress: OnBuild:[] Labels:map[app:tomcat role:master] StopSignal: VolumeDriver: Memory:0 MemorySwap:0 CpuShares:0 Cpuset: PortSpecs:[] HostConfig:{Binds:[] ContainerIDFile: LxcConf:[] Memory:0 MemoryReservation:0 MemorySwap:0 KernelMemory:0 CpuShares:0 CpuPeriod:0 CpusetCpus: CpusetMems: CpuQuota:0 BlkioWeight:0 OomKillDisable:false MemorySwappiness:0 Privileged:false PortBindings:map[] Links:[] PublishAllPorts:false Dns:[] DNSOptions:[] DnsSearch:[] ExtraHosts:[] VolumesFrom:[] Devices:[] NetworkMode:host IpcMode: PidMode: UTSMode: CapAdd:[] CapDrop:[] GroupAdd:[] RestartPolicy:{Name: MaximumRetryCount:0} SecurityOpt:[] ReadonlyRootfs:false Ulimits:[] LogConfig:{Type: Config:map[]} CgroupParent: ConsoleSize:[0 0] VolumeDriver:}}
- 
-[37mDEBU[0m[0001] service.CreateService():containerId:
-        
-[31mFATA[0m[0001] service.CreateService():500 Internal Server Error: Error: image zhuqifei/tomcat: not found
-
- 
-[34mINFO[0m[0000] ********************|START TYCOON|******************** 
-[34mINFO[0m[0000] main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log 
-[34mINFO[0m[0000] main.UnmarshalConfig():Log Level : debug     
-[34mINFO[0m[0000] main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377 
-[34mINFO[0m[0000] main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370 
-[34mINFO[0m[0000] main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379 
-[34mINFO[0m[0000] main.main():Start Tycoon Main                
-[37mDEBU[0m[0000] cli.Run(): cli args:[./tycoon-go create ./test/tomcat.yaml http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379]
- 
-[34mINFO[0m[0000] cli.create():Start Create                    
-[37mDEBU[0m[0000] cli.create():ConfigFile Path:./test/tomcat.yaml 
-[37mDEBU[0m[0000] cli.create():yaml config:&{Kind:service Metadata:{Name:tomcat-tycoon21 Labels:map[app:tomcat role:master]} Spec:{Ports:[] Replicas:2 Image:192.168.11.57:5000/zhuqifei/tomcat Resources:{Memory:0 MemorySwap:0 CpuShares:0 CpusetCpus:} Ips:[192.168.11.57 192.168.11.58 192.168.11.59] Cmd:[] Selector:[constraint:hostname!=node6]}}
- 
-[37mDEBU[0m[0000] service.CreateService():containerName:tomcat-tycoon21_master0 ; containerConfig:&{Hostname: Domainname: User: AttachStdin:false AttachStdout:false AttachStderr:false ExposedPorts:map[] Tty:false OpenStdin:false StdinOnce:false Env:[constraint:hostname!=node6] Cmd:[] Image:192.168.11.57:5000/zhuqifei/tomcat Volumes:map[] WorkingDir: Entrypoint:[] NetworkDisabled:false MacAddress: OnBuild:[] Labels:map[app:tomcat role:master] StopSignal: VolumeDriver: Memory:0 MemorySwap:0 CpuShares:0 Cpuset: PortSpecs:[] HostConfig:{Binds:[] ContainerIDFile: LxcConf:[] Memory:0 MemoryReservation:0 MemorySwap:0 KernelMemory:0 CpuShares:0 CpuPeriod:0 CpusetCpus: CpusetMems: CpuQuota:0 BlkioWeight:0 OomKillDisable:false MemorySwappiness:0 Privileged:false PortBindings:map[] Links:[] PublishAllPorts:false Dns:[] DNSOptions:[] DnsSearch:[] ExtraHosts:[] VolumesFrom:[] Devices:[] NetworkMode:host IpcMode: PidMode: UTSMode: CapAdd:[] CapDrop:[] GroupAdd:[] RestartPolicy:{Name: MaximumRetryCount:0} SecurityOpt:[] ReadonlyRootfs:false Ulimits:[] LogConfig:{Type: Config:map[]} CgroupParent: ConsoleSize:[0 0] VolumeDriver:}}
- 
-[37mDEBU[0m[0001] service.CreateService():containerId:
-        
-[31mFATA[0m[0001] service.CreateService():500 Internal Server Error: Error: image zhuqifei/tomcat: not found
-
- 
-time="2016-03-02T16:13:02+08:00" level=info msg="********************|START TYCOON|********************" 
-time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log" 
-time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Log Level : debug" 
-time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377" 
-time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370" 
-time="2016-03-02T16:13:02+08:00" level=info msg="main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379" 
-time="2016-03-02T16:13:02+08:00" level=info msg="main.main():Start Tycoon Main" 
-time="2016-03-07T15:16:41+08:00" level=info msg="********************|START TYCOON|********************" 
-time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Log Path : /home/smallb/workspace/go/src/github.com/yansmallb/tycoon-go/log" 
-time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Log Level : debug" 
-time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Tycoon Host : http://127.0.0.1:2377" 
-time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Swarm Host : http://192.168.11.57:2370" 
-time="2016-03-07T15:16:41+08:00" level=info msg="main.UnmarshalConfig():Etcd Host : http://192.168.11.57:2379,http://192.168.11.58:2379,http://192.168.11.59:2379" 
-time="2016-03-07T15:16:41+08:00" level=info msg="main.main():Start Tycoon Main" 
+[37mDEBU[0m[0000] service.CreateService():containerId:_27
+     
+[34mINFO[0m[0000] cli.create():containerIDs :[_27]
+            
+[37mDEBU[0m[0000] etcdclient.CreateService():containerIds[_27] 
+[37mDEBU[0m[0000] etcdclient.CreateService():CreateService ServiceConfig On etcd Respone &{Action:create Node:{Key: /yansmallb/tycoon/services/centos-libvirt/ServiceConfig, CreatedIndex: 20489, ModifiedIndex: 20489, TTL: 0} PrevNode:<nil> Index:20489} 
+[37mDEBU[0m[0000] etcdclient.CreateService():CreateService ContainerIds On etcd Respone &{Action:create Node:{Key: /yansmallb/tycoon/services/centos-libvirt/ContainerIds/_27, CreatedIndex: 20490, ModifiedIndex: 20490, TTL: 0} PrevNode:<nil> Index:20490} 

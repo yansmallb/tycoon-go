@@ -108,13 +108,14 @@ func (e *Etcd) DeleteService(serviceName string) error {
 
 func (e *Etcd) CreateService(serviceName string, serviceCfgStr string, containerIds []string) error {
 	servicePath := path.Join(TycoonDir, serviceName)
+	log.Debugf("etcdclient.CreateService():containerIds%+v", containerIds)
 	Response, err := e.client.Create(context.Background(), servicePath+"/ServiceConfig", serviceCfgStr)
 	log.Debugf("etcdclient.CreateService():CreateService ServiceConfig On etcd Respone %+v", Response)
 	if err != nil {
 		return err
 	}
-	for index := range containerIds {
-		Response, err := e.client.Create(context.Background(), servicePath+"/ContainerIds/"+containerIds[index], containerIds[index])
+	for _, containerId := range containerIds {
+		Response, err := e.client.Create(context.Background(), servicePath+"/ContainerIds/"+containerId, containerId)
 		log.Debugf("etcdclient.CreateService():CreateService ContainerIds On etcd Respone %+v", Response)
 		if err != nil {
 			return err

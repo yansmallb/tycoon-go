@@ -38,15 +38,15 @@ func Run() {
 		err = delete(serviceName, etcdPath)
 	}
 	if command == "manage" {
-		if len(os.Args) != 3 {
-			manageErr := "the `manage` command takes one arguments. See help"
+		if len(os.Args) > 3 {
+			manageErr := "the `manage` command takes one argument at most. See help"
 			fmt.Println(manageErr)
 			log.Errorln(manageErr)
 			return
 		}
-		etcdPath := os.Args[2]
-		etcdclient.EtcdPath = etcdPath
-		err = manage(etcdPath)
+		//etcdPath := os.Args[2]
+		//etcdclient.EtcdPath = etcdPath
+		err = manage(etcdclient.EtcdPath)
 	}
 	if command == "help" {
 		help()

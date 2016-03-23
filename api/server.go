@@ -88,10 +88,7 @@ func (s *Server) ListenAndServe() error {
 			}
 			if err != nil {
 				chErrors <- err
-			} else {
-				chErrors <- server.Serve(l)
 			}
-
 		}()
 	}
 

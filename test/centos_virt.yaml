@@ -1,0 +1,21 @@
+kind: service
+metadata:
+  name: centos-libvirt
+  labels:
+    type: libvirt
+    app: centos
+    role: master
+spec:
+  ports:
+  replicas: 1
+  image: /var/lib/libvirt/images/centos_65.qcow2
+  cmd:
+   - "hd"
+  resources:
+    memory: 100000
+    cpu-shares: 2
+    cpu-quota: 2
+    networkmode: virbr0
+  ips:
+  selector:
+   - "hd"
